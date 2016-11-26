@@ -22,8 +22,9 @@ permalink: /about/
 
 * GitHub：[@拉祜](https://github.com/18811707971)
 * 博客：[{{ site.title }}]({{ site.url }})
-* 微博: [@青云风城](http://weibo.com/qing-yun-feng-cheng)
-* 知乎: [@青云风城](https://www.zhihu.com/people/qing-yun-feng-cheng/)
+* 微博: [@晚风远行](http://weibo.com/u/3863902986/home?topnav=1&wvr=6)
+* 知乎: [@随风](https://www.zhihu.com/people/qing-yun-feng-cheng/)
+* EEWORLD [@18811707971](http://bbs.eeworld.com.cn)
 
 ## Skill Keywords
 
