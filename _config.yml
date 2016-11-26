@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: 拉祜
 subtitle: "我有我心底的故事"
 description: "傻小子的个人博客"
-keywords: 程序员,工程师, 文艺青年, wangwentao
+keywords: 程序员,工程师, 文艺青年, 小个子大梦想
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -16,9 +16,9 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
-organization: Sogou, Inc.
-organization_url: https://www.sogou.com
+author: Wang Wentao
+organization: MUC.
+organization_url: i.muc.edu.cn
 location: Beijing, MUC, China
 email: 18811707971@163.com
 
