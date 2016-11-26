@@ -12,12 +12,13 @@ permalink: /about/
 
 带着梦想，勇敢奔跑。
 
-## 信念
+## confidence
 
 * stay hungry stay foolish
 * 尽自己的最大努力，书写属于我的传奇
+* 我所爱的，认真守护
 
-## 联系
+## contact
 
 * GitHub：[@拉祜](https://github.com/18811707971)
 * 博客：[{{ site.title }}]({{ site.url }})
