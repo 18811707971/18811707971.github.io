@@ -15,12 +15,17 @@ description: about driver study
 
 三、实验流程:
 (1)了解最简驱动：包含头文件；模块信息声明；模块驱动的入口、出口;功能实现四个部分。
+
  Linux头文件：它们是在Linux源码目录下的：include/linux/
+ 
 信息声明：所有的Linux 代码必须遵循GPL 协议，如果不声明GPL 协议，模块将无法在Linux 中使用。
+
 – MODULE_LICENSE(_license)添加遵循GPL协议，必选！
+
 – MODULE_AUTHOR(_author)代码作者，可选！
 
 – 入口函数module_init(x)
+
 – 出口函数module_exit(x)
 
 
