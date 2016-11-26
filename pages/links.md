@@ -14,3 +14,4 @@ permalink: /links/
 
 * [Linus，一生只为寻找欢笑](https://zhuanlan.zhihu.com/p/19796979?columnSlug=mactalk)
 * [模电与爱情——人生的故事](http://bbs.eeworld.com.cn/thread-450923-1-1.html)
+* [香农外传](http://blog.sciencenet.cn/blog-453322-978153.html)
