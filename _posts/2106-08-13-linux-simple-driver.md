@@ -89,9 +89,9 @@ description: about driver study
 (4)编译
 流程分析：
 
-![这里写图片描述](http://img.blog.csdn.net/20160813212708613)
+ ![这里写图片描述](http://img.blog.csdn.net/20160813212708613)
 
-		我们将最简驱动和Makefile文件拷贝到ubuntu下，注意放到一个文件夹，然后make，成功编译后，文件夹下就有驱动模块：.ko文件。这样最简驱动就完成了。
+ 我们将最简驱动和Makefile文件拷贝到ubuntu下，注意放到一个文件夹，然后make，成功编译后，文件夹下就有驱动模块：.ko文件。这样最简驱动就完成了。
 
 (5)测试
 	使用U盘或者TF卡，当然也可以使用更方便的tftp下载或者NFS系统方式，将.ko文件拷贝到开发板上.加载命令为：insmod ;查看命令：lsnod ;卸载命令:rmmod.
