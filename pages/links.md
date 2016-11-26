@@ -2,7 +2,7 @@
 layout: page
 title: Links
 description: 没有链接的博客是孤独的,好的资料只有通过分享,才能显现出价值。
-keywords:精彩美文,友情链接
+keywords: 精彩美文,友情链接
 comments: true
 menu: 链接
 permalink: /links/
