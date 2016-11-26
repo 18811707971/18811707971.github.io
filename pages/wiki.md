@@ -8,7 +8,7 @@ menu: 技术宅
 permalink: /technology/
 ---
 
-> 记多少命令和快捷键会让脑袋爆炸呢？
+> 捷径，老司机带你飞
 
 <ul class="listing">
 {% for wiki in site.wiki %}
