@@ -1,31 +1,28 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 一只有艺术的通信狗，一个走在路上的程序员
+keywords: Wang Wentao, 王文涛
 comments: true
-menu: 关于
+menu: 关于我
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+路漫漫其修远兮，吾将上下而求索。
 
-仰慕「优雅编码的艺术」。
+带着梦想，勇敢奔跑。
 
-## 坚信
+## 信念
 
-* 熟能生巧
-* 努力改变人生
+* stay hungry stay foolish
+* 尽自己的最大努力，书写属于我的传奇
 
 ## 联系
 
-* GitHub：[@mzlogin](https://github.com/mzlogin)
-* 掘金：[@mzlogin](http://gold.xitu.io/user/570ddaeb2e958a005c63b2da)
-* LinkedIn：[@mazhuang](https://www.linkedin.com/in/mazhuang)
+* GitHub：[@拉祜](https://github.com/18811707971)
 * 博客：[{{ site.title }}]({{ site.url }})
-* 微博: [@mzlogin](http://weibo.com/mzlogin)
-* 知乎: [@mzlogin](http://www.zhihu.com/people/mzlogin)
-* 豆瓣: [@壮哥不胖](http://www.douban.com/people/freedim)
+* 微博: [@青云风城](http://weibo.com/qing-yun-feng-cheng)
+* 知乎: [@青云风城](https://www.zhihu.com/people/qing-yun-feng-cheng/)
 
 ## Skill Keywords
 
