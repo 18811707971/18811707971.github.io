@@ -33,7 +33,7 @@ permalink: /about/
     {% endfor %}
 </div>
 
-#### Mobile Developer Keywords
+#### Os Developer Keywords
 <div class="btn-inline">
     {% for keyword in site.skill_mobile_com_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
