@@ -35,14 +35,14 @@ permalink: /about/
 
 #### Mobile Developer Keywords
 <div class="btn-inline">
-    {% for keyword in site.skill_mobile_app_keywords %}
+    {% for keyword in site.skill_mobile_com_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
 
-#### Windows Developer Keywords
+#### Hardware Developer Keywords
 <div class="btn-inline">
-    {% for keyword in site.skill_windows_keywords %}
+    {% for keyword in site.skill_hardware_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
