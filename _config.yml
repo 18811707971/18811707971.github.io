@@ -35,16 +35,16 @@ navs:
     label: 分类
 
   -
-    href: /wiki/
-    label: 维基
+    href: /technology/
+    label: 技术宅
 
   -
-    href: /links/
-    label: 链接
+    href: /communication/
+    label:一只通信狗
 
   -
     href: /about/
-    label: 关于
+    label: 关于我
 
 # ---------------- #
 #       RSS        #
