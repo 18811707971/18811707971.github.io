@@ -1,6 +1,8 @@
 # 码志
 
-我的个人博客：<http://mazhuang.org>，欢迎 Star 和 Fork。
+我的个人博客：http://wentao1213.com
+
+Fork自 mzlogin/mzlogin.github.io 非常感谢前辈，小白终于上路。
 
 ## 概览
 
