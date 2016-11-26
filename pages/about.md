@@ -8,17 +8,15 @@ menu: 关于我
 permalink: /about/
 ---
 
-路漫漫其修远兮，吾将上下而求索。
+    一只不符合标准的程序员，一只热爱电子的通信汪
 
-带着梦想，勇敢奔跑。
-
-## confidence
+## 警示
 
 * stay hungry stay foolish
 * 尽自己的最大努力，书写属于我的传奇
 * 我所爱的，认真守护
 
-## contact
+## 交流
 
 * GitHub：[@拉祜](https://github.com/18811707971)
 * 博客：[{{ site.title }}]({{ site.url }})
