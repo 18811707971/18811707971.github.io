@@ -37,15 +37,15 @@ vi /etc/xinetd.d/tftp
 		service tftp
 		{
 		socket_type         = dgram
-		protocol                                 = udp
-		wait                                         = yes
-		user                                         = root
-		server                 = /usr/sbin/in.tftpd
+		protocol            		= udp
+		wait                            = yes
+		user                            = root
+		server              = /usr/sbin/in.tftpd
 		server_args         = -s /var/tftpboot/
-		disable                 = no
-		per_source        = 11
-		cps                                          = 100 2
-		Flags                                 = IPv4
+		disable             = no
+		per_source          = 11
+		cps                 		= 100 2
+		Flags               		= IPv4
 		}
 
 代码格式如下图所示（用tab键隔开，不建议使用空格）
