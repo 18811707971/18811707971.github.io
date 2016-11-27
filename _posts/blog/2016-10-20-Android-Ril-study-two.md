@@ -9,15 +9,17 @@ description: about sim7100c study
 ---
 
 1.Android电话系统设计框架图：
-		  Android的智能机架构是应用处理器+基带芯片，也就是AP+Modem的模式，AP部分相当于CPU，Modem相当于网卡，而且每个厂商使用的Modem都有可能不一样,故Android 开发者使用的Modem 是不一样的，各种指令格式，初始化序列都可能不一样，所以为了消除这些差别，Android 设计者将ril 做了一个抽象，使用一个虚拟电话的概念，不同modem相关的AT指令或者通信协议编译成相应的动态链接库.so文件，Rild 是具体的AT 指令合成者和应答解析者。
+
+  Android的智能机架构是应用处理器+基带芯片，也就是AP+Modem的模式，AP部分相当于CPU，Modem相当于网卡，而且每个厂商使用的Modem都有可能不一样,故Android 开发者使用的Modem 是不一样的，各种指令格式，初始化序列都可能不一样，所以为了消除这些差别，Android 设计者将ril 做了一个抽象，使用一个虚拟电话的概念，不同modem相关的AT指令或者通信协议编译成相应的动态链接库.so文件，Rild 是具体的AT 指令合成者和应答解析者。
 		
 ![这里写图片描述](http://img.blog.csdn.net/20161014090018453)
 _____
 Android电话系统代码结构:
 ![这里写图片描述](http://img.blog.csdn.net/20161016150027456)
-*
+
 2.互相之间的通信
-		RILC与上层的RILJ沟通方式是通过Socket传输数据与命令，而与底层Modem的信号传输是通过串口用AT命令来实现。
+
+RILC与上层的RILJ沟通方式是通过Socket传输数据与命令，而与底层Modem的信号传输是通过串口用AT命令来实现。
 		
 ![这里写图片描述](http://img.blog.csdn.net/20161017163950135)
 
@@ -35,6 +37,7 @@ ril-daemon守护进程指的是system/bin/下的可执行程序rild，而rild是
 
 
 5.rild启动流程分析
+
 1.rild（hardware/ril/rild/rild.c）：仅实现main函数作为整个ril层的入口点，负责完成初始化。
 
 2.libril.so（hardware/ril/libril/*）：与rild结合相当紧密，是其共享库，编译时就已经建立了这一关系.libril.so驻留在rild这一守护进程中，主要完成同上层通信的工作，接受ril请求并传递给libreference-ril.so，同时把libreference-ril.so的反馈传给调用进程。
@@ -48,7 +51,6 @@ RILD进程启动的时序图：
 6.rild.c 代码分析
 
 ```C
-
 		#include <stdio.h>
 		#include <stdlib.h>
 		#include <dlfcn.h>
