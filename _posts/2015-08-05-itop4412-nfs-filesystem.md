@@ -8,7 +8,7 @@ description: about nfs study
 
 ---
 
-注：[本文转自迅为讨论群] (http://www.topeetboard.com)
+注：[本文转自迅为讨论群](http://www.topeetboard.com)
 
 1. 网络的基础知识
 
