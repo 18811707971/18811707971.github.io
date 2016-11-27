@@ -10,28 +10,35 @@ description: about sim7100c study
 
 1.概念介绍
 
-	Android电话系统围绕底层使用Modem硬件来搭建，提供呼叫、短信和网络连接功能，其中modem也称为基带。Modem驱动程序包含在Linux内核层中,所以3G/4G模块的搭建其实就是电话系统的搭建 。
-	主流3G/4G模块：主要分有 内置(集成在处理器中如高通等，内置模块主要通过共享内存与处理器通信）；  外置(较常见，大多通过usb转串口接口并利用AT命令与处理器通信,usb串口一般使用标准的驱动,AT命令由Hayes公司发明，一种调制解调器命令语言。
+Android电话系统围绕底层使用Modem硬件来搭建，提供呼叫、短信和网络连接功能，其中modem也称为基带。Modem驱动程序包含在Linux内核层中,所以3G/4G模块的搭建其实就是电话系统的搭建 。
+
+主流3G/4G模块：主要分有 内置(集成在处理器中如高通等，内置模块主要通过共享内存与处理器通信）；  外置(较常见，大多通过usb转串口接口并利用AT命令与处理器通信,usb串口一般使用标准的驱动,AT命令由Hayes公司发明，一种调制解调器命令语言。
 	
 	
 2.基本架构概述
-    Android RIL (Radio Interface Layer)提供了Telephony服务和Radio硬件之间的抽象层。RIL负责数据的可靠传输、AT命令的发送以及response（响应）的解析。一般的，应用处理器（AP）通过AT命令集与无线通讯模块（基带/BP）通信。通信的方式又分为主动请求的request(诸如拨号、发短信……)，以及Modem主动上报的例如信号强度、基站信息、来电、来短信等，称之为unsolicitedresponse（未经请求的响应）。
+   Android RIL (Radio Interface Layer)提供了Telephony服务和Radio硬件之间的抽象层。RIL负责数据的可靠传输、AT命令的发送以及response（响应）的解析。一般的，应用处理器（AP）通过AT命令集与无线通讯模块（基带/BP）通信。通信的方式又分为主动请求的request(诸如拨号、发短信……)，以及Modem主动上报的例如信号强度、基站信息、来电、来短信等，称之为unsolicitedresponse（未经请求的响应）。
    
-   电话系统大体框架）:分三大层，硬件(连接modem设备)，Android系统（主要包括了Linux内核层，运行库层和Framework层),平台API（即再往上为应用层）。
+电话系统大体框架）:分三大层，硬件(连接modem设备)，Android系统（主要包括了Linux内核层，运行库层和Framework层),平台API（即再往上为应用层）。
        
-   ![电话系统大体框架](http://img.blog.csdn.net/20161009100641850)
+ ![电话系统大体框架](http://img.blog.csdn.net/20161009100641850)
    
-   具体实现自下到上：Modem驱动，RIL库 、RIL守护进程，电话JAVA框架和电话应用(其中电话系统部分无JNI) 。
+ 具体实现自下到上：Modem驱动，RIL库 、RIL守护进程，电话JAVA框架和电话应用(其中电话系统部分无JNI) 。
+ 
     Kernel Space 属于驱动层在内核中实现，一般分为AT命令通道和数据通道两路接口。   
+    
    RIL层：贯穿Android的内核层至应用层，由三部分组成：RIL守护进程(本质是rild可执行程序，开机通过init启动，与framework层主要通过socket来进行）, libril库和ril实现库(电话层硬件抽象层)。主要负责负责数据的可靠传输、AT命令的发送以及response(来自modem)的解析 。
    
    ![这里写图片描述](http://img.blog.csdn.net/20161009164434526)
 
-RIL接口下层结构：ril实现库的接口非常复杂，需要处理的命令，相关结构体比较多，其接口主要定义在 hardware/ril/include/telephony 目录的ri.h中。    rild socket:与框架层进行通信   
+RIL接口下层结构：ril实现库的接口非常复杂，需要处理的命令，相关结构体比较多，其接口主要定义在 hardware/ril/include/telephony 目录的ri.h中。
+
+rild socket:与框架层进行通信   
+
  RIL_Env: 主要用于请求完成函数、上报消息响应函数和周期行处理函数三个功能。
+ 
  ril硬件抽象层主要实现 ril命令与AT命令的转换。
  
-   ![这里写图片描述](http://img.blog.csdn.net/20161009163305865)
+![这里写图片描述](http://img.blog.csdn.net/20161009163305865)
 
 3.Modem与AP通讯
 
@@ -49,14 +56,16 @@ RIL接口下层结构：ril实现库的接口非常复杂，需要处理的命�
 
 4.Android RIL组成
 
-		Android RIL可以分成2个模块，一个部分RIL Demon(RILD)，用于通过socket和framework通讯；另一部分是第三方自己客制化的部分，暂时称之为vendor RIL。这样设计是因为不同的厂商使用的Modem不一样，而RIL又和Modem紧密联系，所以Android有把和Modem联系紧密的部分和公共部分剥离开，让不同的厂商可以客制化vendor RIL以适应厂商自己的Modem。Vendor RIL专门负责通过AT和Modem进行通讯。可以细化称为:
+Android RIL可以分成2个模块，一个部分RIL Demon(RILD)，用于通过socket和framework通讯；另一部分是第三方自己客制化的部分，暂时称之为vendor RIL。这样设计是因为不同的厂商使用的Modem不一样，而RIL又和Modem紧密联系，所以Android有把和Modem联系紧密的部分和公共部分剥离开，让不同的厂商可以客制化vendor RIL以适应厂商自己的Modem。Vendor RIL专门负责通过AT和Modem进行通讯。可以细化称为:
 
 ![这里写图片描述](http://img.blog.csdn.net/20161009160806635)
 		
 RIL模块由rild守护进程、libril.so、librefrence.so三部分组成：
 
 1.rild模块:
+
 被编译为一个可执行文件，RIL守护进程，开机时被init守护进程调用启动，实现一个main函数作为整个ril模块的入口点。
+
 在初始化时使用dlopen打开librefrence-ril.so，从中取出并执行RIL_Init函数，得到RIL_RadioFunctions指针，通过RIL_register()函数注册到libril.so库中，其源码结构如下：
 
 ![这里写图片描述](http://img.blog.csdn.net/20161009161441341)
