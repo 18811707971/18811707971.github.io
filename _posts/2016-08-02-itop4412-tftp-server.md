@@ -10,7 +10,7 @@ description: 搭建TFTP服务器
 
 注：TFTP的搭建
 
-[转自iTOP-4412讨论群] (http://www.topeetboard.com) 
+[转自iTOP-4412讨论群](http://www.topeetboard.com) 
 
 一、TFTP服务器的搭建与测试：
 TFTP是用来下载远程文件的最简单网络协议，它其于UDP协议而实现。嵌入式linux的tftp开发环境包括两个方面：一是linux服务器端的tftp-server（服务器）支持，二是嵌入式目标系统的tftp-client（客户端）支持。因为u-boot本身内置支持tftp-client，所以嵌入式目标系统端就不用配置了。
