@@ -2,7 +2,7 @@
 layout: post
 title: 以platform总线方式注册杂项设备驱动
 date: 2016-03-21
-categories: Linux
+categories: 嵌入式Linux
 tags: [Linux,Driver,Bus,Device]
 description: 4412 driver study
 
