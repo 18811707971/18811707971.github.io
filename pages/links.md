@@ -8,8 +8,8 @@ menu: 链接
 permalink: /links/
 ---
 
-> God made relatives. Thank God we can choose our friends.
-> 以下的文章是我在网上看到的比较好的资源,一个大杂烩
+> 以下的文章是我在网上看到的比较好的资源,一个大杂烩.
+
 
 * [拉祜](http://wentao1213.com)
 
