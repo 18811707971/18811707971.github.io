@@ -9,7 +9,7 @@ description: linux C
 
 
 这几天在看Linux下的usb摄像头采集视频，看到网上的
-[Linux视频采集] (http://blog.csdn.net/zgyulongfei/article/details/7526249)	
+[Linux视频采集](http://blog.csdn.net/zgyulongfei/article/details/7526249)	
 中有一个选项函数，getopt_long，寻根问底，学习一下，掌握新技能。
 
 一.介绍
@@ -34,7 +34,7 @@ optsting：
 
 3. 单个字符后跟两个冒号，表示该选项后可以有参数也可以没有参数。如果有参数，参数必须紧跟在选项后不能以空格隔开。该参数的指针赋给optarg。（这个特性是GNU的扩张）。
 
-optstring是一个字符串，表示可以接受的参数。例如，"a:b:cd"，表示可以接受的参数是a,b,c,d，其中，a和b参数后面跟有更多的参数值。(例如：-a host --b name)。
+optstring是一个字符串，表示可以接受的参数。例如，"a: b: cd"，表示可以接受的参数是a,b,c,d，其中，a和b参数后面跟有更多的参数值。(例如：-a host --b name)。
 
 longopts：指向数组的指针，这个数组是option结构数组，option结构称为长选项表，其声明如下：
 
@@ -187,6 +187,7 @@ getopt_long( argc, argv, short_options, long_options, NULL);
 ![这里写图片描述](http://img.blog.csdn.net/20161128130006156)
 
 参考：
+
 [详细解析命令行的getopt_long()函数](http://www.thinksaas.cn/topics/0/71/71671.html)
 
 [linux 中解析命令行参数 （getopt_long用法） ](http://www.cnblogs.com/hnrainll/archive/2011/09/15/2176933.html)
