@@ -15,6 +15,7 @@ permalink: /links/
 * [模电与爱情——人生的故事](http://bbs.eeworld.com.cn/thread-450923-1-1.html)
 * [香农外传](http://blog.sciencenet.cn/blog-453322-978153.html)
 * [Unix传奇](http://coolshell.cn/articles/2322.html)
+* [浪潮之巅](http://bbs.eeworld.com.cn/forum.php?mod=viewthread&tid=75488&highlight=%C0%CB%B3%B1%D6%AE%E1%DB)
 * [拉祜](http://wentao1213.com)
 * [我理解的逻辑地址、线性地址、物理地址和虚拟地址](http://bbs.chinaunix.net/thread-2083672-1-1.html)
 * [Linux视频采集与编码](http://blog.csdn.net/zgyulongfei/article/details/7526249)
