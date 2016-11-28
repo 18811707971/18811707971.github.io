@@ -2,7 +2,7 @@
 layout: post
 title: Linux最简驱动
 date: 2016-08-13
-categories: Linux
+categories: 嵌入式Linux
 tags: [ITOP4412,LINUX]
 description: about driver study
 
