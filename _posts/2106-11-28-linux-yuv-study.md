@@ -2,12 +2,12 @@
 layout: post
 title: 详解YUV数据格式
 date: 2016-11-28
-categories: C语言
+categories: 嵌入式Linux
 tags: [Linux,V4L2,YUV]
 description: YUV解析
 ---
 
-[转自] (http://blog.csdn.net/beyond_cn/article/details/12998247)
+[转自--详解YUV数据格式](http://blog.csdn.net/beyond_cn/article/details/12998247)
 
 一、UV格式有两大类：planar和packed。
 
