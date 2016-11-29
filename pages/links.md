@@ -20,4 +20,5 @@ permalink: /links/
 * [我理解的逻辑地址、线性地址、物理地址和虚拟地址](http://bbs.chinaunix.net/thread-2083672-1-1.html)
 * [Linux视频采集与编码](http://blog.csdn.net/zgyulongfei/article/details/7526249)
 * [跟我一起写 Makefile](http://blog.csdn.net/haoel/article/details/2886/)
+* [Linux C函数查询](http://www.iteedu.com/os/linux/linuxprgm/linuxcfunctions/interface/accept.php)
 
