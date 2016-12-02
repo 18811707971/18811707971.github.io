@@ -21,4 +21,4 @@ permalink: /links/
 * [Linux视频采集与编码](http://blog.csdn.net/zgyulongfei/article/details/7526249)
 * [跟我一起写 Makefile](http://blog.csdn.net/haoel/article/details/2886/)
 * [Linux C函数查询](http://www.iteedu.com/os/linux/linuxprgm/linuxcfunctions/interface/accept.php)
-
+* [VS2010/MFC编程入门教程之目录和总结](http://blog.csdn.net/s12244315/article/details/50913539)
