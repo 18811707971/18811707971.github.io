@@ -48,8 +48,7 @@ UpdateData(false);//用于将数据在屏幕中对应控件中显示出来。
 
 使用UpdateData()函数时，当前界面上所有绑定了的变量(即通过MFC ClassWizard给控件添加了对应的变量)都会被UpdateData(TRUE)更新成对应控件中的内容；同样所有绑定了变量的控件中的内容也会UpdateData(FALSE)更新成对应变量中的内容。
 
-要接受用户的输入就true，
-
-要输入结果给用户就flase
+>> true:将控件上的数据读取到变量中。
+>> false:将变量中的数据写到控件中。
 
 数据量不多的话，最好用SetDlgItemText()和GetDlgItemText()
