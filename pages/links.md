@@ -23,3 +23,4 @@ permalink: /links/
 * [跟我一起写 Makefile](http://blog.csdn.net/haoel/article/details/2886/)
 * [Linux C函数查询](http://www.iteedu.com/os/linux/linuxprgm/linuxcfunctions/interface/accept.php)
 * [VS2010/MFC编程入门教程之目录和总结](http://blog.csdn.net/s12244315/article/details/50913539)
+* [[经典排序算法][集锦] ](http://www.cnblogs.com/kkun/archive/2011/11/23/2260312.html)
