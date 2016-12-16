@@ -16,3 +16,7 @@ description: 2015 离开学生会
 谨以此文记我那些宣传部的时光。
 
 ![这里写图片描述](http://img.blog.csdn.net/20161126212200475)
+
+我的部长，小伙伴们，一起的快乐时光！
+
+![这里写图片描述](http://img.blog.csdn.net/20161216104255195?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
