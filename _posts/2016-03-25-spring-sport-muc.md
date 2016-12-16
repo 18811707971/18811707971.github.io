@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 13通信，遇见你是我这一生的幸运
-date: 2015-03-25
+date: 2016-03-25
 categories: 杂记
 tags: [大学,13通信,民大]
 description: 2016 运动会
