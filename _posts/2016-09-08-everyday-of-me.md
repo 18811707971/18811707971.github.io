@@ -28,9 +28,7 @@ description: 践行，不后悔
 你，一直在努力的做到不要让身边和乱七八糟的鸡毛蒜皮的小事干扰自己，只有自己变得更加的强大，
 
 才有足够的底气，不会让别人一直欺凌，我也不甘心做一个安于现状的幽灵。
-回想这几天较为浮躁的内心，方有此感，文字随我成长，伴我同行。加油，文涛，守住自己的内心，每
-
-天都做好自己！
+回想这几天较为浮躁的内心，方有此感，文字随我成长，伴我同行。加油，文涛，守住自己的内心，每天都做好自己！
 
 ![这里写图片描述](http://img.blog.csdn.net/20161217220801230?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
