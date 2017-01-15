@@ -22,7 +22,7 @@ description: about Linux V4L2 and USB camera study
 
 (1)代码如下：
 
-[代码] http://blog.csdn.net/zgyulongfei/article/details/7526249)
+[代码] (http://blog.csdn.net/zgyulongfei/article/details/7526249)
 
 非常感谢！
 
