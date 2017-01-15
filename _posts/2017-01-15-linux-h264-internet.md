@@ -2,8 +2,8 @@
 layout: post
 title: 基于itop4412在Linux最小系统下的 RTP传输H264视频VLC播放
 date: 2017-01-15
-categories: Linux,RTP,VLC
-tags: [Linux,V4L2]
+categories: 2016 Project
+tags: [Linux,RTP,VLC,V4L2]
 description: about Linux H264 transmission
 
 ---
