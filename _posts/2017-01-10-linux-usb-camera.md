@@ -2,7 +2,7 @@
 layout: post
 title: 基于itop4412在Linux最小系统下的USB摄像头视频采集
 date: 2017-01-10
-categories: 2016 Project
+categories: 2016Project
 tags: [Linux,V4L2]
 description: about Linux V4L2 and USB camera study
 
