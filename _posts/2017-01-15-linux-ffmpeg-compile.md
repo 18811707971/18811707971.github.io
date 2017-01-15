@@ -10,7 +10,7 @@ description: about Linux ffmpeg compile
 
 近期在做一个视频监控的项目，在网上了解到如下的方案：
 
-	用的V4L2的视频驱动，然后配合ffmpeg、x264的软件编解码，通过udp上传至pc显示，配合开源的编解码库，实现h.264的流编码与传输。
+用的V4L2的视频驱动，然后配合ffmpeg、x264的软件编解码，通过udp上传至pc显示，配合开源的编解码库，实现h.264的流编码与传输。
 
 前面我们已经实现了x264编码库的移植，并且做了测试。下面就进行ffmpeg库的编译。了解到程序运行时还需要libz.so这个库支持，所以下载zlib-1.2.5.tar.gz 源文件交叉编译。
 
@@ -50,7 +50,7 @@ zlib的编译结束后，在/opt/wecam/ffmpeg中可以看到编译好的文件�
 
 2.编译ffmpeg
 
-下载地址(http://down1.chinaunix.net/distfiles/ffmpeg-1.0.tar.bz2)
+[下载地址] (http://down1.chinaunix.net/distfiles/ffmpeg-1.0.tar.bz2)
 
 解压ffmpeg-0.10.1.tar.gz
 
