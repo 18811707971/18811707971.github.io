@@ -2,7 +2,7 @@
 layout: post
 title: 基于itop4412在Linux最小系统下的 ffmpeg 的移植和测试
 date: 2017-01-15
-categories: 2016 Project
+categories: 2016Project
 tags: [Linux,ffmpeg]
 description: about Linux ffmpeg compile
 
