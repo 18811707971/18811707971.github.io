@@ -8,8 +8,8 @@ menu: 关于我
 permalink: /about/
 ---
 
-    一个正在路上的程序员，一只热爱电子的通信汪
-
+    就算头破血流，也要坚持到底，奋力前行！
+   
 ## 警示
 
 * stay hungry stay foolish
