@@ -102,7 +102,7 @@ disqus_username: 18811707971
 # 在使用 disqus 的时候可点击显示多说评论框
 disqus: 
   on: true
-  shortname: wentao1213
+  shortname: http-wentao1213-com-1
 
 lazy_load_duoshuo: true
 
