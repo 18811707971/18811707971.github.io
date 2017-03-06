@@ -32,12 +32,10 @@ navs:
 
   -
     href: /categories/
-    label: 分类
-
+    label: 萝卜白菜
   -
     href: /technology/
-    label: 技术宅
-
+    label: 快人一步
   -
     href:  /open-source/
     label:  开源项目学习
