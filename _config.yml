@@ -103,7 +103,6 @@ disqus_username: 18811707971
 disqus: 
   on: true
   shortname: http-wentao1213-com-1
-
 lazy_load_duoshuo: true
 
 # ---------------- #
