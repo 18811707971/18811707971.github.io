@@ -4,12 +4,11 @@ title: technology
 description: 精益求精
 keywords: 技术, 学习
 comments: false
-menu: 技术宅
+menu: 快人一步
 permalink: /technology/
 ---
 
-> 捷径，老司机带你飞
-
+> 不一样的风景，不一样的终点
 <ul class="listing">
 {% for wiki in site.wiki %}
 {% if wiki.title != "Wiki Template" %}
