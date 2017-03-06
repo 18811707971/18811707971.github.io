@@ -3,10 +3,10 @@
     {% when 'disqus' %}
       {% if site.disqus_username %}
         {% assign load_disqus = true %}
-        <!-- Disqus Protection, see https://github.com/mzlogin/mzlogin.github.io/issues/2 -->
-        {% if site.disqus_username == 'mzlogin' %}
+        <!-- Disqus Protection, see https://github.com/18811707971/18811707971.github.io/issues/2 -->
+        {% if site.disqus_username == '18811707971' %}
           {% assign load_disqus = false %}
-          {% if site.url contains 'mazhuang.org' %}
+          {% if site.url contains 'wentao1213.com' %}
             {% assign load_disqus = true %}
           {% endif %}
         {% endif %}
