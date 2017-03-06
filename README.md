@@ -1,12 +1,12 @@
 # 拉祜
 
-拉祜：是我的民族，上大学的第一天，我们寝室的兄弟一下子没有记住我的名字，却记住了我的民族，也许是北方我们民族基本没有，大家都不曾听说，从那以后，舍友们都亲切称我为拉祜，大学的生活，感谢你们。
+拉祜：我的民族，来到民大的第一天，寝室的兄弟还没有记住我的名字，却记住了我的民族，也许是中原之地，未曾听闻有此民族，从那以后，舍友们都亲切称我为拉祜，大学的生活，异乡人，感谢你们。
 
 我的个人博客：http://wentao1213.com
 
-Fork自 mzlogin/mzlogin.github.io 非常感谢前辈，小白终于上路。
+Fork自 mzlogin/mzlogin.github.io 感谢前辈。
 
-   生活学习中，我们总有很多的点点滴滴，或是伤心的泪水，或是激动地喜悦，最终构成了我们的每一天。一段文字，一段深情，一个脚印，都是属于我们的成长。
+   每天，总有很多的点点滴滴，或是伤心的泪水，或是激动地跳跃，亦或是晴天雨雪，萧萧北风。一天天，一段文字，一段深情，一个脚印，都是属于我们的成长。
 
 ## 概览
 
@@ -41,7 +41,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 ## 致谢
 
-本博客外观基于 [mzlogin](https://github.com/mzlogin) 修改，非常感谢您！
+本博客外观基于 [mzlogin](https://github.com/mzlogin) 修改，非常感谢！
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
