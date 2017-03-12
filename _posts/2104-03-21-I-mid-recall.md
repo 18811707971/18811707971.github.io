@@ -2,7 +2,7 @@
 layout: post
 title: 那些年
 date: 2014-03-21
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,总结]
 description: 忽然回想那些年
 ---
