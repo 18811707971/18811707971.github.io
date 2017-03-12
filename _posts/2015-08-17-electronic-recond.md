@@ -2,7 +2,7 @@
 layout: post
 title: 电赛小记
 date: 2015-08-17
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,竞赛]
 description: 2015 national undergraduate electronic design recond
 ---
