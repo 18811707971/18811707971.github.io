@@ -1,7 +1,7 @@
 ---
 layout: categories
 title: Categories
-description: 我的文章基因库
+description: 分类栏目
 keywords: 分类
 comments: false
 menu: 萝卜白菜
