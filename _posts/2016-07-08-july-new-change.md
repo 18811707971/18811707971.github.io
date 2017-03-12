@@ -2,7 +2,7 @@
 layout: post
 title: 七月新程
 date: 2016-07-08
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,总结]
 description: 总结往昔,砥砺前行
 ---
