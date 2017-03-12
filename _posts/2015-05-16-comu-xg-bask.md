@@ -2,7 +2,7 @@
 layout: post
 title: 一场很遗憾，不甘心，不会忘的比赛
 date: 2015-05-16
-categories: 杂记
+categories: 随笔
 tags: [兄弟,篮球,班级]
 description: 2015 篮球赛
 ---
