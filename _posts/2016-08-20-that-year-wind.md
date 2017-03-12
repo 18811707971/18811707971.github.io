@@ -2,7 +2,7 @@
 layout: post
 title: 那天，窗外的风格外凉
 date: 2016-08-20
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,家乡]
 description: 小兴致
 ---
