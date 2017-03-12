@@ -2,7 +2,7 @@
 layout: post
 title: 家乡，拉祜族
 date: 2014-02-10
-categories: 杂记
+categories: 随笔
 tags: [生活,家乡,恩师]
 description: 拉祜族
 ---
