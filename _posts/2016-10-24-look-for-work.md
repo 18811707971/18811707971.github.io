@@ -2,7 +2,7 @@
 layout: post
 title: 就业之路---凄凄惨惨戚戚
 date: 2016-10-24
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,家乡]
 description: 回家所见闻
 ---
