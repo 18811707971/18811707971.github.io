@@ -2,7 +2,7 @@
 layout: post
 title: 回乡小记
 date: 2016-02-03
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,家乡]
 description: 回家所见闻
 ---
