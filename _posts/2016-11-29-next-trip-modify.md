@@ -2,7 +2,7 @@
 layout: post
 title: 下一站
 date: 2016-11-29
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,总结]
 description: 下一站很难,但我要坚强
 ---
