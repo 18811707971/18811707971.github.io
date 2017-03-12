@@ -12,7 +12,7 @@ description: about Linux H264 transmission
 
 1.RTP传输h264码流例子 
 
-[下载地址] (http://download.csdn.net/detail/shenxingdeliulu/8607533)
+[下载地址](http://download.csdn.net/detail/shenxingdeliulu/8607533)
 
 需要修改两个地方:
 
