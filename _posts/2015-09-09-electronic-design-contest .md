@@ -2,7 +2,7 @@
 layout: post
 title: 2015年全国大学生电子设计竞赛总结
 date: 2015-09-09
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,总结]
 description: 2015 national undergraduate electronic design contest
 ---
