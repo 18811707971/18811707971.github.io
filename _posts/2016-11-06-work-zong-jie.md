@@ -2,7 +2,7 @@
 layout: post
 title: 我要努力地往前走,不管前面是多么的艰难，并且要快乐着
 date: 2016-12-06
-categories: 杂记
+categories: 随笔
 tags: [生活,工作,勉励]
 description: 杂谈
 
