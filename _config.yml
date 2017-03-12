@@ -115,5 +115,5 @@ google:
 #      Datas       #
 # ---------------- #
 skill_software_keywords: [C, C++]
-skill_mobile_com_keywords: [Android, Linux, Unix]
-skill_hardware_keywords: [模电, 数电, MCU, Atium Desiger, PCB, ARM, EE]
+skill_mobile_com_keywords: [Linux, Unix]
+skill_hardware_keywords: [模电, 数电, MCU, Atium Desiger, PCB, ARM, EE，嵌入式]
