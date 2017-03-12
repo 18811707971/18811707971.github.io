@@ -2,7 +2,7 @@
 layout: post
 title: 打造我井然有序的每天
 date: 2016-09-08
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,理想]
 description: 践行，不后悔
 ---
