@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 爸，妈，我
+title: 点点滴滴的痕迹
 date: 2016-06-20
-categories: 杂记
+categories: 随笔
 tags: [生活,家乡,远方]
 description: 家
 ---
