@@ -2,7 +2,7 @@
 layout: post
 title: 最后一次和大学兄弟们一起战斗了
 date: 2016-06-07
-categories: 杂记
+categories: 随笔
 tags: [班级,篮球,兄弟]
 description: 13通信
 ---
