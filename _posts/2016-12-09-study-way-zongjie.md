@@ -2,7 +2,7 @@
 layout: post
 title: 学习方式总结
 date: 2016-12-09
-categories: 杂记
+categories: 随笔
 tags: [生活,工作,学习]
 description: 学习方式
 
