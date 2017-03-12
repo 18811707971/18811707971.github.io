@@ -2,7 +2,7 @@
 layout: post
 title: 你不去试怎么知道呢？纵然九死，或有一生
 date: 2017-03-05
-categories: 杂记
+categories: 随笔
 tags: [做事,处事,效率]
 description: 坚持，前行
 ---
