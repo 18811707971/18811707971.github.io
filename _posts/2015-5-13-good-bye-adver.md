@@ -2,7 +2,7 @@
 layout: post
 title: 再见,宣传部
 date: 2015-05-13
-categories: 杂记
+categories: 随笔
 tags: [生活,学习,学生会]
 description: 2015 离开学生会
 ---
