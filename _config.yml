@@ -32,17 +32,17 @@ navs:
 
   -
     href: /categories/
-    label: 萝卜白菜
+    label: 栏目
   -
     href: /technology/
-    label: 快人一步
+    label: 快捷
   -
     href:  /open-source/
-    label:  项目学习
+    label:  项目
     
   -
     href: /links/
-    label: 柴米油盐
+    label: 阅读
   -
     href: /about/
     label: 关于我
