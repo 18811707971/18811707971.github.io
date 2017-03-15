@@ -4,11 +4,11 @@ title: Links
 description: 分享好资料，开阔新视野。
 keywords: 精彩美文,友情链接
 comments: true
-menu: 链接
+menu: 阅读
 permalink: /links/
 ---
 
-> 琴棋书画，锅碗瓢盆，酸甜苦辣。
+> 琴棋书画，书生意气。
 
 * [Linus，一生只为寻找欢笑](https://zhuanlan.zhihu.com/p/19796979?columnSlug=mactalk)
 * [模电与爱情——人生的故事](http://bbs.eeworld.com.cn/thread-450923-1-1.html)
