@@ -4,7 +4,7 @@ title: Categories
 description: 分类栏目
 keywords: 分类
 comments: false
-menu: 萝卜白菜
+menu: 栏目
 permalink: /categories/
 ---
 
