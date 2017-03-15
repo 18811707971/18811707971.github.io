@@ -4,7 +4,7 @@ title: technology
 description: 精益求精
 keywords: 技术, 学习
 comments: false
-menu: 快人一步
+menu: 快捷
 permalink: /technology/
 ---
 
