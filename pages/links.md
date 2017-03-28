@@ -17,6 +17,7 @@ permalink: /links/
 * [浪潮之巅](http://bbs.eeworld.com.cn/forum.php?mod=viewthread&tid=75488&highlight=%C0%CB%B3%B1%D6%AE%E1%DB)
 * [芯片行业的三国演义：ARM与Intel的战争史诗](http://blog.renren.com/share/1496246006/14710645985)
 * [ARM芯片,我选择........](http://www.360doc.com/content/16/0215/21/30583198_534855052.shtml)
+* [《拉祜拉祜》](http://mp.weixin.qq.com/s?__biz=MzAxODA4OTkyNw==&mid=201516139&idx=1&sn=a83bc85cf70ed748419508dd2a79a002&scene=2&from=timeline&isappinstalled=0#rd)
 * [拉祜-----分割线](http://wentao1213.com)
 * [我理解的逻辑地址、线性地址、物理地址和虚拟地址](http://bbs.chinaunix.net/thread-2083672-1-1.html)
 * [Linux视频采集与编码](http://blog.csdn.net/zgyulongfei/article/details/7526249)
