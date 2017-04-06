@@ -116,10 +116,10 @@ description: 冒泡排序的简单实现
 
 4.参考
 
-[经典排序算法 - 冒泡排序Bubble sort ] (http://www.cnblogs.com/kkun/archive/2011/11/23/2260280.html)
+[经典排序算法 - 冒泡排序Bubble sort ](http://www.cnblogs.com/kkun/archive/2011/11/23/2260280.html)
 
-[C语言冒泡排序算法及代码] (http://c.biancheng.net/cpp/html/2443.html)
+[C语言冒泡排序算法及代码](http://c.biancheng.net/cpp/html/2443.html)
 
-[C语言冒泡排序法详解] (http://jingyan.baidu.com/article/6525d4b13f920bac7d2e9484.html)
+[C语言冒泡排序法详解](http://jingyan.baidu.com/article/6525d4b13f920bac7d2e9484.html)
 
 今日箴言：唯有思考,才有真知
