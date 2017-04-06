@@ -4,12 +4,12 @@
 baseurl:
 url: http://wentao1213.com
 date_format: "ordinal"
-title: 拉祜
+title: 十三
 subtitle: "我有我心底的故事"
 description: "傻小子的个人博客"
 keywords: 程序员,工程师, 文艺青年, 梦想小子
 favicon: /favicon.ico
-timezone: Asia/Shanghai
+timezone: Asia/Beijing
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
