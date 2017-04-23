@@ -47,4 +47,5 @@ description: 画板画板
 |P + I + N      |原理图忽略ERC检查 |        |
 |Ctrl + shift + V	|阵列粘贴  |        |
 |TAB键         |用于弹出该操作的属性|      |
+| shift + s    |切换显示单个层  |     |
 
