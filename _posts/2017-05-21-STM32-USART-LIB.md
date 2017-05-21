@@ -71,50 +71,54 @@ RX(PA10)管脚配置为浮空输入或者带上拉输入。
 ![这里写图片描述](http://img.blog.csdn.net/20170521174851670?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 6.例程——USART1为例
+
 (1) 初始化：
-```c
-void uart_init(u32 bound){
-  //GPIO端口设置
-	GPIO_InitTypeDef GPIO_InitStructure;
-	USART_InitTypeDef USART_InitStructure;
-	NVIC_InitTypeDef NVIC_InitStructure;
-	 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOA, ENABLE);	//使能USART1，GPIOA时钟
-  
-	//USART1_TX   GPIOA.9
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9; //PA.9
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//复用推挽输出
-  GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.9
-   
-  //USART1_RX	  GPIOA.10初始化
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;//PA10
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;//浮空输入
-  GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.10  
 
-  //Usart1 NVIC 配置
-  NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
-	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=3 ;//抢占优先级3
-	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;		//子优先级3
-	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
-	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化NVIC寄存器
-  
-   //USART 初始化设置
-	USART_InitStructure.USART_BaudRate = bound;//串口波特率
-	USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
-	USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
-	USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
-	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
-	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;	//收发模式
+	```c
+	void uart_init(u32 bound){
+	  //GPIO端口设置
+		GPIO_InitTypeDef GPIO_InitStructure;
+		USART_InitTypeDef USART_InitStructure;
+		NVIC_InitTypeDef NVIC_InitStructure;
 
-  USART_Init(USART1, &USART_InitStructure); //初始化串口1
-  USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
-  USART_Cmd(USART1, ENABLE);                    //使能串口1 
+		RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOA, ENABLE);	//使能USART1，GPIOA时钟
 
-}
-```
+		//USART1_TX   GPIOA.9
+	  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9; //PA.9
+	  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;	//复用推挽输出
+	  GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.9
+
+	  //USART1_RX	  GPIOA.10初始化
+	  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;//PA10
+	  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;//浮空输入
+	  GPIO_Init(GPIOA, &GPIO_InitStructure);//初始化GPIOA.10  
+
+	  //Usart1 NVIC 配置
+	  NVIC_InitStructure.NVIC_IRQChannel = USART1_IRQn;
+		NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=3 ;//抢占优先级3
+		NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;		//子优先级3
+		NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
+		NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化NVIC寄存器
+
+	   //USART 初始化设置
+		USART_InitStructure.USART_BaudRate = bound;//串口波特率
+		USART_InitStructure.USART_WordLength = USART_WordLength_8b;//字长为8位数据格式
+		USART_InitStructure.USART_StopBits = USART_StopBits_1;//一个停止位
+		USART_InitStructure.USART_Parity = USART_Parity_No;//无奇偶校验位
+		USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
+		USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;	//收发模式
+
+	  USART_Init(USART1, &USART_InitStructure); //初始化串口1
+	  USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);//开启串口接受中断
+	  USART_Cmd(USART1, ENABLE);                    //使能串口1 
+
+	}
+
+	```
 
 (2) 中断：
+
 ```c
 void USART1_IRQHandler(void)                	//串口1中断服务程序
 	{
@@ -149,20 +153,24 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 	OSIntExit();  											 
 #endif
 }
+
 ```
 注：
 
 1) USART_RX_STA是一个接收状态标记。长度16位：
+
 bit15：	接收完成标志
 bit14：接收到0x0d 
 bit13~0：接收到的有效字节数目
 
 2) 中断注意事项： 
+
 中断发生后必须清除中断位，否则会出现死循环不断发生这个中断。然后需要对中断类型进行判断再执行代码。 
 
 使用EXTI的I/O中断，在完成RCC与GPIO硬件设置之后需要做三件事：初始化EXTI、NVIC开中断、编写中断执行代码
 
 3）修改 printf 指向的串口
+
 ```c
 //修改此函数即可
 int fputc(int ch, FILE *f)
@@ -174,6 +182,7 @@ int fputc(int ch, FILE *f)
 ```
   
   参考：
+  
 1.[STM32学习笔记——USART串口 ](http://www.cnblogs.com/wupengda/p/4094259.html)
 
 2.[STM32串口USART1的使用方法和程序 ](http://www.cnblogs.com/zitech/p/4989001.html)
