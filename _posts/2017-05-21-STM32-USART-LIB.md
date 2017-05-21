@@ -74,7 +74,7 @@ RX(PA10)管脚配置为浮空输入或者带上拉输入。
 
 (1) 初始化：
 
-	```c
+```c
 	void uart_init(u32 bound){
 	  //GPIO端口设置
 		GPIO_InitTypeDef GPIO_InitStructure;
@@ -114,8 +114,7 @@ RX(PA10)管脚配置为浮空输入或者带上拉输入。
 	  USART_Cmd(USART1, ENABLE);                    //使能串口1 
 
 	}
-
-	```
+```
 
 (2) 中断：
 
