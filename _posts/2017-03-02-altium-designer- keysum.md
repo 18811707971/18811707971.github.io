@@ -53,4 +53,6 @@ description: 画板画板
 | L | 显示层 |  |
 | P+F |放置填充| |
 |Shift+M|局部放大功能| |
+|shift + w|切换布线宽度| |
+|shift + v|切换过孔|   |
 
