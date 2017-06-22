@@ -56,4 +56,6 @@ description: 画板画板
 |shift + w|切换布线宽度| |
 |shift + v|切换过孔|   |
 |shift+ctrl+空格 /shift + 空格|切换| |
+|T + D + R|设计规则检查| |
+|D + R|规则设置| |
 
