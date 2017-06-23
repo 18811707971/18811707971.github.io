@@ -4,7 +4,7 @@ title: Altium designer 快捷键小结
 date: 2017-03-02
 categories: 电子之路
 tags: [软件,PCB,技术]
-description: 画板画板
+description: 硬件电路设计工具
 ---
 
 |快捷键| 功能|备注|
@@ -59,4 +59,4 @@ description: 画板画板
 |T + D + R|设计规则检查| |
 |D + R|规则设置| |
 |V + B |PCB 3D翻转| |
-
+|D + O |原理图纸张大小设置| |
