@@ -58,4 +58,5 @@ description: 画板画板
 |shift+ctrl+空格 /shift + 空格|切换| |
 |T + D + R|设计规则检查| |
 |D + R|规则设置| |
+|V + B |PCB 3D翻转| |
 
