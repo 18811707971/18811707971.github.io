@@ -55,7 +55,7 @@ description: 硬件电路设计工具
 |Shift+M|局部放大功能| |
 |shift + w|切换布线宽度| |
 |shift + v|切换过孔|   |
-|shift+ctrl+空格 /shift + 空格|切换| |
+|shift+ctrl+空格 /shift + 空格|切换布线形式| |
 |T + D + R|设计规则检查| |
 |D + R|规则设置| |
 |V + B |PCB 3D翻转| |
