@@ -60,3 +60,10 @@ description: 硬件电路设计工具
 |D + R|规则设置| |
 |V + B |PCB 3D翻转| |
 |D + O |原理图纸张大小设置| |
+|D + K|开PCB层管理器| |
+
+
+
+参考：
+
+1.[PCB 布线心得](http://blog.csdn.net/nodead/article/details/50785908)
