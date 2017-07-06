@@ -20,3 +20,5 @@ description: PCB设计
 6.[Altium Designer 学习怎样添加3D模型](http://www.cnblogs.com/mr-bike/p/3523683.html)
 
 7.[DXP中关于PCB及原理绘制那些高级玩意总结](http://www.51hei.com/bbs/dpj-30191-1.html)
+
+8.[AD09 覆铜间距设置](http://www.51hei.com/bbs/dpj-49326-1.html)
