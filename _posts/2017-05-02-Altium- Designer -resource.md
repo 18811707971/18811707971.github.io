@@ -24,3 +24,5 @@ description: PCB设计
 8.[AD09 覆铜间距设置](http://www.51hei.com/bbs/dpj-49326-1.html)
 
 9.[Altium Designer PCB快速布局](http://blog.csdn.net/qlexcel/article/details/52651301)
+
+10.[[原创] Altium Designer中如何自定义快捷键](http://bbs.eeworld.com.cn/forum.php?mod=viewthread&ordertype=1&tid=485633)
