@@ -26,3 +26,5 @@ description: PCB设计
 9.[Altium Designer PCB快速布局](http://blog.csdn.net/qlexcel/article/details/52651301)
 
 10.[[原创] Altium Designer中如何自定义快捷键](http://bbs.eeworld.com.cn/forum.php?mod=viewthread&ordertype=1&tid=485633)
+
+11.[在Altium designer中显示/隐藏飞线的方法](http://www.51hei.com/bbs/dpj-39156-1.html)
