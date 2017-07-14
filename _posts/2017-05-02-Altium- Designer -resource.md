@@ -28,3 +28,5 @@ description: PCB设计
 10.[[原创] Altium Designer中如何自定义快捷键](http://bbs.eeworld.com.cn/forum.php?mod=viewthread&ordertype=1&tid=485633)
 
 11.[在Altium designer中显示/隐藏飞线的方法](http://www.51hei.com/bbs/dpj-39156-1.html)
+
+12.[ AD10 复制问题（复制方法和智能粘贴 拼版）](http://blog.csdn.net/chengdong1314/article/details/52287703)
