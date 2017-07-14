@@ -73,6 +73,7 @@ description: 硬件电路设计工具
 |T + U|删除全部布线（all）||
 |J + C|在PCB中搜索元件| |
 |T + C|原理图元件和PCB元件互相定位| |
+|N + SHOW / HIDE|显示、隐藏飞线| |
 
 
 
