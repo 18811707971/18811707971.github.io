@@ -83,3 +83,5 @@ description: 硬件电路设计工具
 1.[PCB 布线心得](http://blog.csdn.net/nodead/article/details/50785908)
 
 2.[altium designer实用小技巧](http://www.360doc.com/content/15/0714/11/2428535_484814828.shtml)
+
+3.[Altium Designer 6.9十分实用的快捷键](http://www.gpxz.com/diannao/changshi/71076.html)
