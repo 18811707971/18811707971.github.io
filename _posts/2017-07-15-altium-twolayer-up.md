@@ -123,3 +123,14 @@ Design--->Class （电源类，差分类等），右下角的 PCB 选项可以�
 （3）锁定器件
 
 12.gerber文件的输出：单位、过孔、钻孔、网表、坐标
+
+13.设计复杂的电路时，原理图文件常由多个部分组成，有两种设计的方法：
+
+平坦式：多个原理图平级，通过端口或者网络标号连接（NET / PORT）
+
+等级式：分层设计（自顶向下；自下向上），顶层由 sheet symbol 和 sheet Entry 组成。如图：
+
+![这里写图片描述](http://img.blog.csdn.net/20170722170254998?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+注：电源有全局属性，不需要连接；页的入口只和自己的子图连接；各个模块连接时，端口的输入还是输出的设置；子图由 sheet symbol 进行创建，也可由子图倒回去创建顶层。
+
