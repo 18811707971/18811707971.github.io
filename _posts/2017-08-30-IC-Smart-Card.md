@@ -2,7 +2,7 @@
 layout: post
 title: IC卡——基础知识
 date: 2017-08-30
-categories: SMART CARD
+categories: IC卡
 tags: [IC-CARD,DRIVER,BUS]
 description: IC-CARD STUDY AND APPLICATION
 ---
