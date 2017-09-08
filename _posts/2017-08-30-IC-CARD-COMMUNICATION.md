@@ -260,7 +260,7 @@ APDU（ApplicationProtocolDataUnit--应用协议数据单元）。协议数据�
 |Lc|Data的长度（含4字节mac）|
 |Data|在命令的数据字段中发送的字节串|
 |Le|在向命令响应的数据字段中期望的字节最大数|
-___
+
 
 **四种命令：**
 
@@ -270,7 +270,7 @@ ___
 |Case2 | CLA INS P1 P2 Le|
 |Case3 | CLA INS P1 P2 Lc Data|
 |Case4 | CLA INS P1 P2 Lc Data Le|
-___
+
 
 **Case1:**
 
