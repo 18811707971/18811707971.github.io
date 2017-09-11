@@ -7,11 +7,11 @@ tags: [IIC,AT24C02,DRIVER]
 description: STM32 LEARN
 ---
 
-**1.概述**
+### **1.概述**
 
 MiniSTM32 开发板板载的 EEPROM 芯片型号为 24C02。该芯片的总容量是 256个字节，该芯片通过 IIC 总线与外部连接。这里直接采用原子板上的 AT24C02 ，主要是软件编程方面的学习。
 
-**2.硬件连接**
+### **2.硬件连接**
 
 ![这里写图片描述](http://img.blog.csdn.net/20170819131622775?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -44,15 +44,15 @@ A2、A1、A0 三个引脚直接接地。供电： (VCC = 2.7V to 5.5V)
 ![这里写图片描述](http://img.blog.csdn.net/20170819133759926?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
-**3.例程分析**
+### **3.例程分析**
 
-**（一）IIC 部分实现代码**
+##### **3.1IIC 部分实现代码**
 
 包括 IIC 的初始化（IO 口）、 IIC 开始、 IIC 结束、 ACK、 IIC 读写等功能，在其他函数里面，只需要调用相关的 IIC 函数就可以和外部 IIC 器件通信了，这里并不局限于 24C02，该段代码可以用在任何 IIC 设备上。
 
 IIC_SCL 和 IIC_SDA 分别连在 STM32 的 PC12 和 PC11。
 
-**1.IIC 初始化**
+###### **3.1.1.IIC 初始化**
 
 ```c
 
@@ -77,7 +77,7 @@ void IIC_Init(void)
 }
 ```
 
-**2.产生 IIC 开始信号**
+###### **3.1.2.产生 IIC 开始信号**
 
 ```c
 //产生 IIC 起始信号
@@ -98,7 +98,7 @@ void IIC_Start(void)
 }
 ```
 
-**3.产生停止IIC信号**
+###### **3.1.3.产生停止IIC信号**
 
 ```c
 //产生 IIC 停止信号
@@ -117,7 +117,7 @@ void IIC_Stop(void)
 }
 ```
 
-**4.等待应答信号**
+###### **3.1.4.等待应答信号**
 
 ```c
 //等待应答信号到来
@@ -148,7 +148,7 @@ u8 IIC_Wait_Ack(void)
 }
 ```
 
-**5.应答信号**
+###### **3.1.5.应答信号**
 
 ```c
 //产生 ACK 应答
@@ -168,7 +168,7 @@ void IIC_Ack(void)
 }
 ```
 
-**6.不产生应答**
+###### **3.1.6.不产生应答**
 
 ```c
 //不产生 ACK 应答
@@ -186,7 +186,7 @@ void IIC_NAck(void)
 }
 ```
 
-7.IIC发送一个字节
+###### **3.1.7.IIC发送一个字节**
 
 ```c
 //IIC 发送一个字节
@@ -214,7 +214,7 @@ void IIC_Send_Byte(u8 txd)
 }
 ```
 
-**8.IIC读一个字节**
+###### **3.1.8.IIC读一个字节**
 
 ```c
 //读 1 个字节， ack=1 时，发送 ACK， ack=0，发送 nACK
@@ -242,7 +242,7 @@ u8 IIC_Read_Byte(unsigned char ack)
 }
 ```
 
-**（二）AT24C02 操作**
+##### **3.2AT24C02 操作**
 
 直接通过寄存器操作设置 IO 口的模式为输入还是输出，代码如下：
 
@@ -250,7 +250,7 @@ u8 IIC_Read_Byte(unsigned char ack)
 	
 	#define SDA_OUT() {GPIOC->CRH&=0XFFFF0FFF;GPIOC->CRH|=3<<12;}  
 
-**1.初始化 IIC 接口**
+###### **3.2.1.初始化 IIC 接口**
 
 ```c
 //初始化 IIC 接口
@@ -260,7 +260,7 @@ void AT24CXX_Init(void)
 }
 ```
 
-**2.在 AT24CXX 指定地址读出一个数据**
+###### **3.2.2.在 AT24CXX 指定地址读出一个数据**
 
 ```c
 //在 AT24CXX 指定地址读出一个数据
@@ -291,7 +291,7 @@ u8 AT24CXX_ReadOneByte(u16 ReadAddr)
 }
 ```
 
-**3.在 AT24CXX 指定地址写入一个数据**
+###### **3.2.3.在 AT24CXX 指定地址写入一个数据**
 
 ```c
 //在 AT24CXX 指定地址写入一个数据
@@ -317,7 +317,7 @@ void AT24CXX_WriteOneByte(u16 WriteAddr,u8 DataToWrite)
 }
 ```
 
-**4.AT24CXX 里面的指定地址开始写入长度为 Len 的数据**
+###### **3.2.4.AT24CXX 里面的指定地址开始写入长度为 Len 的数据**
 
 ```c
 //在 AT24CXX 里面的指定地址开始写入长度为 Len 的数据
@@ -334,7 +334,7 @@ void AT24CXX_WriteLenByte(u16 WriteAddr,u32 DataToWrite,u8 Len)
 }
 ```
 
-**5.AT24CXX 里面的指定地址开始读出长度为 Len 的数据**
+###### **3.2.5.AT24CXX 里面的指定地址开始读出长度为 Len 的数据**
 
 ```c
 //在 AT24CXX 里面的指定地址开始读出长度为 Len 的数据
@@ -355,7 +355,7 @@ u32 AT24CXX_ReadLenByte(u16 ReadAddr,u8 Len)
 }
 ```
 
-**6.检查 AT24CXX 是否正常**
+###### **3.2.6.检查 AT24CXX 是否正常**
 
 ```c
 //检查 AT24CXX 是否正常
@@ -380,7 +380,7 @@ u8 AT24CXX_Check(void)
 }
 ```
 
-**7.AT24CXX 里面的指定地址开始读出指定个数的数据**
+###### **3.2.7.AT24CXX 里面的指定地址开始读出指定个数的数据**
 
 ```c
 /在 AT24CXX 里面的指定地址开始读出指定个数的数据
@@ -398,7 +398,7 @@ void AT24CXX_Read(u16 ReadAddr,u8 *pBuffer,u16 NumToRead)
 }
 ```
 
-**8.AT24CXX 里面的指定地址开始写入指定个数的数据**
+###### **3.2.8.AT24CXX 里面的指定地址开始写入指定个数的数据**
 
 ```c
 //在 AT24CXX 里面的指定地址开始写入指定个数的数据
@@ -418,6 +418,6 @@ void AT24CXX_Write(u16 WriteAddr,u8 *pBuffer,u16 NumToWrite)
 ```
 
 
-参考：
+## **参考：**
 
 1.原子 STM32 开发库函数版本
