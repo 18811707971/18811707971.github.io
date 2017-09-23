@@ -26,3 +26,4 @@ permalink: /links/
 * [Linux C函数查询](http://www.iteedu.com/os/linux/linuxprgm/linuxcfunctions/interface/accept.php)
 * [VS2010/MFC编程入门教程之目录和总结](http://blog.csdn.net/s12244315/article/details/50913539)
 * [[经典排序算法][集锦] ](http://www.cnblogs.com/kkun/archive/2011/11/23/2260312.html)
+* [硬十在手，别无所求](https://mp.weixin.qq.com/s/NeQ36YU1taiirYNI9no2bQ)
