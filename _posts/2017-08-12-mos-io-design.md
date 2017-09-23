@@ -117,3 +117,5 @@ _______
 6.[MOS管驱动电路，看这里就啥都懂了！](http://www.eefocus.com/mygod12345/blog/16-08/389677_7db05.html)
 
 7.[从头到脚带你了解COOL MOSFET的EMI设计](http://ledlight.eefocus.com/module/forum/thread-598781-1-1.html)
+
+8.[MOSFET结构及其工作原理详解](https://mp.weixin.qq.com/s/GZyhOAuXuYN0LB7Ga8XlZg)
