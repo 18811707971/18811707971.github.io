@@ -88,3 +88,5 @@ description: 硬件电路设计工具
 2.[altium designer实用小技巧](http://www.360doc.com/content/15/0714/11/2428535_484814828.shtml)
 
 3.[Altium Designer 6.9十分实用的快捷键](http://www.gpxz.com/diannao/changshi/71076.html)
+
+4.[Altium Designer(AD)常用操作和快捷方式](http://blog.csdn.net/best_fiends_zxh/article/details/53233213)
