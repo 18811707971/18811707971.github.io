@@ -7,11 +7,11 @@ tags: [usb,agreement,bus]
 description: USB STUDY AND APPLICATION
 ---
 
-**1.基本概念介绍**
+## **1.基本概念介绍**
 
 **USB** (Universal Serial Bus)是1995年Microsoft、Compaq、IBM等公司联合制定的一种新的PC串行通信协议。它基于通用连接技术，实现外设的简单快速连接，达到方便用户、降低成本、扩展PC连接外设范围的目的。允**许外设在开机状态下热插拔**，最多可串接下来 **127** 个外设，它可以向**低压设备**提供**5伏电源**，同时可以减少 PC 机 I/O 接口数量。
 
-**2.USB版本**
+## **2.USB版本**
 
 USB 1.0出现在1996年的，速度只有 1.5Mb/s
 
@@ -23,7 +23,7 @@ USB2.0规范是由USB1.1规范演变而来的。它的传输速率达到了 480M
 
 USB3.0提供了十倍于USB 2.0的传输速度和更高的节能效率，速率最高达 5Gbps 被称为”super speed”。都可向下兼容。
 
-**3.USB的电气特性** 
+## **3.USB的电气特性** 
 
 USB 连接器包含四条线：2条用于电源供电(VBUS和GND)，2条用于USB数据传输(D+和D-)。**VBUS提供5V电源，电流可达500mA**。**D+和D-为双向信号线，信号传输速率为12Mbps(每位83ns)。D+和D-信号电平为3.3V**  。
 
@@ -31,7 +31,7 @@ USB 连接器包含四条线：2条用于电源供电(VBUS和GND)，2条用于US
 
 USB OTG接口中有5条线： 2条用来传送数据（D+ 、D-）; 1条是电源线(VBUS); 1条则是接地线(GND)、1条是ID线
 
-**4.USB硬件接口**
+## **4.USB硬件接口**
 
 ![这里写图片描述](http://img.blog.csdn.net/20170817141727391?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -39,7 +39,7 @@ USB OTG接口中有5条线： 2条用来传送数据（D+ 、D-）; 1条是电�
 
 ![这里写图片描述](http://img.blog.csdn.net/20170817143151560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-**5.USB的特点**
+## **5.USB的特点**
 
 1.可以热插拔，即插即用。
 
@@ -49,7 +49,7 @@ USB OTG接口中有5条线： 2条用来传送数据（D+ 、D-）; 1条是电�
 
 4.可以连接多个设备。USB在个人电脑上往往具有多个接口，可以同时连接几个设备，如果接上一个有四个端口的USB HUB时，就可以再连上；四个USB设备，以此类推，尽可以连下去，将你家的设备都同时连在一台个人电脑上而不会有任何问题(注：最高可连接至127个设备)。
 
-**6.USB的拓朴结构**
+## **6.USB的拓朴结构**
 
  USB 的总线结构是采用**阶梯式星形**（tiered star）的**拓扑**（topology）结构，如下图所示。每一个星形的**中心是集线器**，而每一个设备可以通过集线器上的接口来加以连接。从图中可以看到USB的设各包含了两种类型：USB集线器与USB设备。位于最顶端的就是**Host（主机端）**。从Host的联机往下连接至Hub（集线器），再由集线器按阶梯式以一层或一阶的方式往下扩展出去，连接在下一层的设各或另一个集线器上。事实上，集线器也可视为一种设备。而其中最大层数为6层（(包括最后一级设备后共7层)）。每一个星形的外接点的数目可加以变化，一般集线器具有2、4或7个接口。
 
@@ -69,7 +69,7 @@ UHCI：主要是Intel和Via主板上的USB控制器芯片。一般是USB1.1标�
 
 EHCI：是Intel等几个厂商研发，并且兼容OHCI和UHCI。一般是USB2.0标准。
 
-**7.USB总线的总体结构**
+## **7.USB总线的总体结构**
 
 整个USB总线可以分为3个部分进行描述：USB连接、USB设备、USB主机。
 
@@ -101,7 +101,7 @@ EHCI：是Intel等几个厂商研发，并且兼容OHCI和UHCI。一般是USB2.0
 
 
 
-**8.USB设备探测**
+## **8.USB设备探测**
 
 全速和低速设备通过**其端接的上拉电阻的位置**来区分。
 
@@ -115,14 +115,14 @@ EHCI：是Intel等几个厂商研发，并且兼容OHCI和UHCI。一般是USB2.0
 
 ![这里写图片描述](http://img.blog.csdn.net/20170821091157392?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-**9.USB设备与USB驱动的匹配**
+## **9.USB设备与USB驱动的匹配**
 
 USB 设备与 USB 驱动怎么匹配的呢？实际上 USB 设备中有一个模块叫**固件**，是固件信息和 USB 驱动进行的匹配。**固件是固化在集成电路内部的程序代码，USB 固件中包含了 USB 设备的出厂信息，标识该设备的厂商 ID、产品 ID、主版本号和次版本号等。**另外固件中还包含一组程序，这组程序主要完成 USB协议的处理和设备的读写操作。USB 设备固件和 USB 驱动之间通信的规范是通过 USB 协议来完成的。
 
 
 
 
-参考：**
+## **参考：**
 
 1.[总线接口与计算机通信（四）USB外部总线（初级认识） ](http://www.cnblogs.com/mylinux/p/5902043.html)
 
