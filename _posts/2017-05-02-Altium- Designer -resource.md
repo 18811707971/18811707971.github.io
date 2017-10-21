@@ -30,3 +30,5 @@ description: PCB设计
 11.[在Altium designer中显示/隐藏飞线的方法](http://www.51hei.com/bbs/dpj-39156-1.html)
 
 12.[ AD10 复制问题（复制方法和智能粘贴 拼版）](http://blog.csdn.net/chengdong1314/article/details/52287703)
+
+13.[利用Excel辅助Altium Designer建立原理图元器件库的方法](https://wenku.baidu.com/view/5d281060b0717fd5370cdc92.html)
