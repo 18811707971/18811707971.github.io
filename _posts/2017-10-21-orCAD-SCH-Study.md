@@ -7,6 +7,7 @@ tags: [Allegro学习,orCAD,嵌入式]
 description: 绘图仿真工具cadence学习
 ---
 
+
 ## **1. orcad创建简单分裂元器件**
 
 这里以flash芯片为例，说明创建简单元器件原理图符号的方法。
