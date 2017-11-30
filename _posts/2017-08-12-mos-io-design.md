@@ -7,7 +7,7 @@ tags: [MOS,三极管,推挽,开漏]
 description: MOS
 ---
 
-### 1.**MOS管符号箭头指向**
+## **1.MOS管符号箭头指向**
 
 在所有半导体元件中, 箭头的意义表示p-n结的方向。
 
@@ -58,7 +58,7 @@ MOS 管做开关电路时的连接：**体二极管的负极输入，正极接�
 ![这里写图片描述](http://img.blog.csdn.net/20170811132608215?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 _______
 
-### 2.**推挽输出(Push-Pull)**
+## **2.推挽输出(Push-Pull)**
 
 推挽输出是用两个晶体管或者场效应管构成的推挽电路，电路的特点就是输出电阻小。可以输出高,低电平,连接数字器件。push－pull 高低电平由IC的电源低定，不能简单的做逻辑操作等。push－pull是现在CMOS电路里面用得最多的输出级设计方式。
 
@@ -72,7 +72,7 @@ _______
 
 推挽放大器电路中，一只三极管工作在导通、放大状态时，另一只三极管处于截止状态，当输入信号变化到另一个半周后，原先导通、放大的三极管进入截止，而原先截止的三极管进入导通、放大状态，两只三极管在不断地交替导通放大和截止变化，所以称为推挽放大器。输出既可以向负载灌电流，也可以从负载抽取电流.​
 
-### **3.开漏输出(Open-Drain)**
+## **3.开漏输出(Open-Drain)**
 
 单片机I/O常用的输出方式的开漏输出（Open-Drain），漏极开路电路概念中提到的“漏”是指 MOSFET的漏极。同理，集电极开路电路中的“集”就是指三极管的集电极。在数字电路中，分别简称OD门和OC门。​
 
@@ -102,6 +102,10 @@ _______
 
 **电阻小延时小**的前提条件是电阻选择的原则应在末级晶体管**功耗**允许范围内，有经验的设计者在使用逻辑芯片时，不会选择1欧姆的电阻作为上拉电阻。在脉冲的上升沿电源通过上拉无源电阻对负载充电，显然电阻越小上升时间越短，在脉冲的下降沿，除了负载通过有源晶体管放电外，电源也通过上拉电阻和导通的晶体管对地 形成通路，带来的问题是芯片的功耗和耗电问题。**电阻影响上升沿，不影响下降沿**。如果使用中不关心上升沿，上拉电阻就可选择尽可能的大点，以减少对地通路的 电流。如果对上升沿时间要求较高，电阻大小的选择应以芯片功耗为参考。
 
+## **4.器件引脚排布**
+
+![这里写图片描述](http://img.blog.csdn.net/20171130134737006?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 **参考：**
 
 1.[MOS管符号箭头指向问题](https://www.zhihu.com/question/27955221/answer/38939126)
@@ -117,5 +121,3 @@ _______
 6.[MOS管驱动电路，看这里就啥都懂了！](http://www.eefocus.com/mygod12345/blog/16-08/389677_7db05.html)
 
 7.[从头到脚带你了解COOL MOSFET的EMI设计](http://ledlight.eefocus.com/module/forum/thread-598781-1-1.html)
-
-8.[MOSFET结构及其工作原理详解](https://mp.weixin.qq.com/s/GZyhOAuXuYN0LB7Ga8XlZg)
