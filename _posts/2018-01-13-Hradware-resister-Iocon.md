@@ -6,6 +6,8 @@ categories: 电子之路
 tags: [DIODE,CATELOG,IOT]
 description: Hardware learning 
 
+
+
 ## **一、定义：**
 
 1、上拉就是将不确定的信号通过一个电阻嵌位在高电平，电阻同时起限流作用，下拉同理。
