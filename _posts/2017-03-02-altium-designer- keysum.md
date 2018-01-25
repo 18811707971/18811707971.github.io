@@ -80,6 +80,7 @@ description: 硬件电路设计工具
 |A + P|文本位置选择| |
 |T + M|复位DRC|  |
 |Ctrl + (shift) + Tab|切换文档显示|   |
+|T + R|走等长、蛇形线|   |
 
 
 参考：
