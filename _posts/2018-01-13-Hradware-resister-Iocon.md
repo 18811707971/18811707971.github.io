@@ -1,10 +1,10 @@
 ﻿---
 layout: post
 title: 上拉电阻和下拉电阻
-date: 208-01-13
+date: 2018-01-13
 categories: 电子之路
 tags: [DIODE,CATELOG,IOT]
-description: Hardware learning 
+description: Hardware Design learning
 ---
 
 
