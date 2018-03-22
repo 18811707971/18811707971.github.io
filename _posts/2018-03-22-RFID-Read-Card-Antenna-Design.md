@@ -1,9 +1,9 @@
-﻿---
+---
 layout: post
 title: 13.56MHz天线绘制
 date: 2018-03-22
 categories: 电子之路
-tags: [antenna,PCB,13.56MHz]
+tags: [antenna,PCB,RFID]
 description: 13.56MHz读卡天线的设计
 ---
 
