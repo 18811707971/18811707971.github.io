@@ -14,9 +14,10 @@ _____
 
 ## **1.13.56Mhz天线简介**
 
+
 ![这里写图片描述](https://img-blog.csdn.net/20180322223158726?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
-                             图1 天线电路
+                                                           图1 天线电路
 
 
 如图1所示，13.56Mhz读卡器天线电路包括两大部分，其中黄色区域是信号接收电路；下面的蓝、绿、土黄色区域是信号发射电路。下面分别介绍两部分电路。
@@ -58,6 +59,7 @@ ____
 不可大面积敷铜，否则会引起磁场涡流效应造成能量严重损耗要注意线圈作用范围内（线圈周围全部空间）不可有大面积的金属元件、金属物体、金属镀膜等。整个发射电路所有器件的地必须连接到同一根地线上并且返回芯片的TVSS脚，且天线电路器件附近不可大面积覆铜，器件之间以导线连接。
 
  下面是天线电路设计实例：
+ 
 
 ![这里写图片描述](https://img-blog.csdn.net/20180322224941939?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
