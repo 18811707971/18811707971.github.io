@@ -4,7 +4,7 @@
 baseurl:
 url: http://wentao1213.com
 date_format: "ordinal"
-title: FutureTime
+title: 梦想工作狂
 subtitle: "梦想工作狂"
 description: "傻小子的个人博客"
 keywords: 程序员,工程师, 文艺青年, 梦想工作狂
@@ -98,22 +98,4 @@ comments_provider: disqus
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
 duoshuo_username: 晚风远行
-disqus_username: 18811707971
-# 在使用 disqus 的时候可点击显示多说评论框
-disqus: 
-  on: true
-  shortname: http-wentao1213-com-1
-lazy_load_duoshuo: true
-
-# ---------------- #
-#    Analytics     #
-# ---------------- #
-google:
-    analytics_id: UA-80669434-1
-
-# ---------------- #
-#      Datas       #
-# ---------------- #
-skill_software_keywords: [C, C++]
-skill_mobile_com_keywords: [Linux, Unix]
-skill_hardware_keywords: [模电, 数电, MCU, Atium Desiger, PCB, ARM, EE，嵌入式]
+d
