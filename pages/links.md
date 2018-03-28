@@ -20,8 +20,8 @@ permalink: /links/
 * [如果看了此文你还不懂傅里叶变换，那就过来掐死我吧](http://blog.jobbole.com/70549/)
 * [酷 壳 – CoolShell](https://coolshell.cn/articles/11629.html)
 * [刘未鹏 | Mind Hacks](http://mindhacks.cn/2010/11/14/the-importance-of-knowing-why-part2/)
+
 * [《拉祜拉祜》](http://mp.weixin.qq.com/s?__biz=MzAxODA4OTkyNw==&mid=201516139&idx=1&sn=a83bc85cf70ed748419508dd2a79a002&scene=2&from=timeline&isappinstalled=0#rd)
-* [拉祜-----分割线](http://wentao1213.com)
 * [我理解的逻辑地址、线性地址、物理地址和虚拟地址](http://bbs.chinaunix.net/thread-2083672-1-1.html)
 * [Linux视频采集与编码](http://blog.csdn.net/zgyulongfei/article/details/7526249)
 * [跟我一起写 Makefile](http://blog.csdn.net/haoel/article/details/2886/)
