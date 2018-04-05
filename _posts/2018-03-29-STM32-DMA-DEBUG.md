@@ -2,7 +2,7 @@
 layout: post
 title: STM32学习笔记————DMA传输
 date: 2018-03-26
-categories: 电子之路
+categories: STM32
 tags: [STM32,DMA]
 description: The data transmit of stm32 dma 
 ---
