@@ -57,6 +57,11 @@ d.充电终止，有两种典型的充电终止方法：采用最小充电电流
 
 ![这里写图片描述](http://img.blog.csdn.net/20170803115237741?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
+精工电子S-8261系列的锂电池管理芯片运用
+
+![这里写图片描述](https://img-blog.csdn.net/2018032715462227?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+
 **参考：**
 
  1.[android 电池（一）：锂电池基本原理篇](http://blog.csdn.net/xubin341719/article/details/8497830)
@@ -70,3 +75,5 @@ d.充电终止，有两种典型的充电终止方法：采用最小充电电流
 5.[锂电池保护板原理 ](http://linear.eefocus.com/module/forum/thread-594025-1-1.html)
 
 6.[供电电路切换与锂电池充电电路设计 ](http://www.cnblogs.com/LittleTiger/p/4402760.html)
+
+7.[PDF数据手册下载](https://www.ablicinc.com/cn/semicon/products/power-management-ic/lithium-ion-battery-protection-ic/)
