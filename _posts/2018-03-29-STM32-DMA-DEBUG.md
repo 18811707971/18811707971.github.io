@@ -64,8 +64,11 @@ DMA_IFCR 的各位就是用来清除 DMA_ISR 的对应位的，通过写 1 清�
 该寄存器控制着 DMA 的很多相关信息，包括**数据宽度、外设及存储器的宽度、通道优先级、增量模式、传输方向、中断允许、使能**等都是通过该寄存器来设置的。所以 DMA_CCRx 是 DMA 传输的核心控制寄存器。
 
 ![这里写图片描述](https://img-blog.csdn.net/20180326224218700?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326224302391?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326224341420?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 ![这里写图片描述](https://img-blog.csdn.net/20180326224408471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 **DMA 通道 x 传输数据量寄存器（DMA_CNDTRx）**
