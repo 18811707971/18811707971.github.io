@@ -85,8 +85,9 @@ _____
 
 2018，继续前进，这是变革的一年，多读书，多思考。
 
+![这里写图片描述](http://img.blog.csdn.net/20160813212708613)
 
-![x](https://img-blog.csdn.net/20180407004339177?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述] (https://img-blog.csdn.net/20180407004339177?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ____
 
