@@ -77,3 +77,5 @@ d.充电终止，有两种典型的充电终止方法：采用最小充电电流
 6.[供电电路切换与锂电池充电电路设计 ](http://www.cnblogs.com/LittleTiger/p/4402760.html)
 
 7.[PDF数据手册下载](https://www.ablicinc.com/cn/semicon/products/power-management-ic/lithium-ion-battery-protection-ic/)
+
+8.[锂电池保护板原理](http://m.dzsc.com/data/2015-8-31/108714.html)

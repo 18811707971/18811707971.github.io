@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: 2018-04-06 读书笔记——把时间当作朋友
 date: 2018-04-07
@@ -75,7 +75,9 @@ _____
 
 养成记录的习惯，以便自己随时监督自己。
 
-家庭是最重要的。因为最终有一天你会发现，哪怕在很极端的情况下依然支持你的肯定是也通常只有是你的家庭——无论你的家庭被你自己认为是好还是坏。
+"家庭是最重要的。因为最终有一天你会发现，哪怕在很极端的情况下依然支持你的肯定是也通常只有是你的家庭——无论你的家庭被你自己认为是好还是坏。"
+
+注：女人，是需要多花些时间陪陪她。————电影《中南海保镖》
 
 _____
 
@@ -85,7 +87,9 @@ _____
 
 2018，继续前进，这是变革的一年，多读书，多思考。
 
-![这里写图片描述](https://img-blog.csdn.net/20180407002619526?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](http://img.blog.csdn.net/20180407005140713?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 
 ____
 
