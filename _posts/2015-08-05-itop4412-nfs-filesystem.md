@@ -21,18 +21,18 @@ IP地址
 	关于IP地址的理论，网络上有大量的文章，这里主要是介绍和实验中需要理解的几个要点知识。
 如下图所示，使用ifconfig，可以查看Ubuntu系统下的IP，下图表面Ubuntu的IP地址是192.168.0.226。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230021828)
+![这里写图片描述](/images/blog/technology/linux-nfs-1.jpg)
 
 
 再来看一下开发板的IP，如下图所示，在查看最小文件系统的etc文件可以看到默认的IP地址为192.168.1.230。
 
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230052420)
+![这里写图片描述](/images/blog/technology/linux-nfs-2.jpg)
 
 上图是没有打包编译的最小系统，如下图所示，是运行着的最小linux系统，也是可以查询和修改IP地址的。
 
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230107797)
+![这里写图片描述](/images\blog\technology/linux-nfs-3.jpg)
 
 最小系统在开发板上运行的时候，也可以使用vi命令来修改IP地址。
 
@@ -43,18 +43,18 @@ IP地址
 如下图所示，使用ifconfig，可以查看Ubuntu系统下的子网掩码，下图表面Ubuntu的子网掩码是255.255.255.0。
 
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230122092)
+![这里写图片描述](/images\blog\technology/linux-nfs-4.jpg)
 
 
 再来看一下开发板的子网掩码，如下图所示，在查看最小文件系统的 etc/eth0-setting文件可以看到默认的子网掩码。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230153999)
+![这里写图片描述](/images\blog\technology/linux-nfs-5.jpg)
 
 
 上图是没有打包编译的最小系统，如下图所示，是运行着的最小linux系统，也是可以查询和修改子网掩码。
 
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230204845)
+![这里写图片描述](/images\blog\technology/linux-nfs-6.jpg)
 
 最小系统在开发板上运行的时候，也可以使用vi命令来修改IP地址。
 
@@ -97,20 +97,20 @@ Result十六进制：192.168.1.0
 
 如下图所示，作者的路由器地址为192.168.0.1，读者根据实际情况登陆路由器，路由器背面一般都有这个地址，如果没有查一下路由器的手册。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230233202)
+![这里写图片描述](/images\blog\technology/linux-nfs-7.jpg)
 
 
 注意上图中WAN设置界面中的网关是192.168.1.1，这个是广域网的网关，实验中使用的是局域网的网关，需要选择“LAN口设置”再查找网关。
 如下图所示，选择DHCP服务器，这里会有一个分配局域网中的IP区间。也就是说IP可以设置为192.168.0.220到192.168.0.250这个区间。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230253659)
+![这里写图片描述](/images\blog\technology/linux-nfs-8.jpg)
 
 
 
 如下图所示，选择“LAN口设置”再查找，子网掩码为255.255.255.0。
 另外在后面的NFS文件系统实验的时候需要上面的192.168.0.1这个地址，可以把这个地址看成局域网的网关，而不能使用WAN中的网关！
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230316940)
+![这里写图片描述](/images\blog\technology/linux-nfs-9.jpg)
 
 了解了IP地址，子网掩码，查看了路由器设置之后，首先可以确定子网掩码为255.255.255.0，然后IP地址可以处于192.168.0.220到192.168.0.250这个区间。大家可以在这个区间取一个地址来计算。
 最后根据大家的实际情况，确认了IP地址和MASK地址之后，修改最小linux系统中的etc/eth0-setting文件，将它们的IP设置到同一网段！
@@ -125,7 +125,7 @@ PC网络配置
 
 进入PC机的网络和共享中心，win7如下图所示，其它系统可以网上查找具体路径，单击进入“网络和共享中心”，单击选择本地连接，拔掉PC机的网线后，网络设置则如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230347769)
+![这里写图片描述](/images\blog\technology/linux-nfs-10.jpg)
 
 找到“本地连接”，单击弹出本地连接对话框之后，然后选择单击“属性”。在弹出本地连接属性对话框。需要配置IPV4，单击IPV4的设置，弹出IPV4设置的对话框。
 然后强制设置两台机器在同一网段。
@@ -134,7 +134,7 @@ PC网络配置
 
 IP地址：192.168.0.10	子网掩码：255.255.255.0	默认网关：192.168.0.1
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230407598)
+![这里写图片描述](/images\blog\technology/linux-nfs-11.jpg)
 
 单击确定，保存退出。
 
@@ -150,7 +150,7 @@ IP地址设置为：192.168.0.11
 
 修改之后，如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230426895)
+![这里写图片描述](/images\blog\technology/linux-nfs-12.jpg)
 
 
 修改之后，将开发板和PC的网口用一根网线连接，重启开发板，测试网络是否通畅。
@@ -159,7 +159,7 @@ IP地址设置为：192.168.0.11
 
 这里PC机的IP是192.168.0.10，开发板的IP是192.168.0.11
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230450391)
+![这里写图片描述](/images\blog\technology/linux-nfs-13.jpg)
 
 如上图所示，可以看到有数据发送和返回，开发板和PC机的网络已经设置好了。
 
@@ -173,11 +173,11 @@ Ubuntu开启之后，如果使用ifconfig查看的ip地址和前面PC的IP不在
 
 添加IP地址：192.168.0.12子网掩码：255.255.255.0网关：192.168.0.1
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230512375)
+![这里写图片描述](/images\blog\technology/linux-nfs-14.jpg)
 
 保存退出配置界面，完成之后Ubuntu终端中使用命令ifconfig命令查看网络，如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230522099)
+![这里写图片描述](/images\blog\technology/linux-nfs-15.jpg)
 
 测试最小网络
 
@@ -185,11 +185,11 @@ Ubuntu开启之后，如果使用ifconfig查看的ip地址和前面PC的IP不在
 
 首先测试虚拟机Ubuntu和PC之间的网络，如下图所示，在Ubuntu终端中输入命令“ping 192.168.0.10”，Ctrl+c可以结束。注意，测试Ubuntu和PC之间的通信，需要用网线将开发板和PC连接起来，否则将无法ping通。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230532506)
+![这里写图片描述](/images\blog\technology/linux-nfs-16.jpg)
 
 接着测试开发板和Ubuntu之间的网络，使用命令“ping 192.168.0.11”如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230547256)
+![这里写图片描述](/images\blog\technology/linux-nfs-17.jpg)
 
 通过了三者之间的测试，局域网就搭建起来了，可以在这个局域网中进行后面tftp和nfs等网络实验。
 
@@ -231,7 +231,7 @@ TFTP（Trivial File Transfer Protocol，简单文件传输协议），是一个�
 其中server_args设置的/var/tftpboot目录是tftp服务器的目录，TFTP客户端就是从这个目录里面获取服务器上的文件的。使用命令mkdir /var/tftpboot建立tftp服务器的目录。
 然后设置/var/tftpboot的访问权限为777。输入：sudo /etc/init.d/xinetd restart命令重启xinetd服务。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230616391)
+![这里写图片描述](/images\blog\technology/linux-nfs-18.jpg)
 
 服务器到这一步就搭建好了，后面来进行测试。
 
@@ -239,24 +239,24 @@ TFTP（Trivial File Transfer Protocol，简单文件传输协议），是一个�
 
 本机测试：在/var/tftpboot下面建立一个文件test，在里面输入hello world,然后保存该文件。在启动另外一个终端。然后输入：tftp 127.0.0.1，如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230637289)
+![这里写图片描述](/images\blog\technology/linux-nfs-19.jpg)
 
 输入get test获取test文件，如下图：
 
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231318722)
+![这里写图片描述](/images\blog\technology/linux-nfs-20.jpg)
 
 在上图我们看到获取到test的信息13字节，然后输入q退出tftp，如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231305925)
+![这里写图片描述](/images\blog\technology/linux-nfs-21.jpg)
 
 然后我们输入ls查看当前目录下是否有test文件了，通过查看，发现当前目录下应经有test文件了，这就是/var/tftpboot目录下的那个test文件，如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231253753)
+![这里写图片描述](/images\blog\technology/linux-nfs-22.jpg)
 
 使用cat命令查看一下test文件的内容，如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231241144)
+![这里写图片描述](/images\blog\technology/linux-nfs-23.jpg)
 
 通过上面的截图，我们看到test文件里面的内容是hello world，与/var/tftpboot目录的test是一样的，至此我们的TFTP服务器端的配置和测试就完成了。
 
@@ -270,14 +270,15 @@ iTOP-4412开发板制作的Linux文件系统已经支持TFTP客户端命令了�
 在iTOP-4412开发板上获取TFTP服务器上的文件，首先先看一下TFTP服务器的IP地址。笔者的TFTP虚拟机的IP地址是192.168.1.109，开发板的默认IP是192.168.1.230，它们在同一个网段，如果不在同一个网段需要修改的开发板的IP地址，修改方法就是前面介绍的修改etc目录下的eth0-setting文件。
 连接开发板的网口到路由器上，然后输入ping命令确认开发板和TFTP服务器是连通的，如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231443752)
+![这里写图片描述](/images\blog\technology/linux-nfs-24.jpg)
 
 如果返回上面的信息就表示开发板和TFTP服务器是连通的，现在我们获取TFTP上的文件，在开发板的串口输入：tftp -g -l test -r test 192.168.1.109，如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231459707)
+![这里写图片描述](/images\blog\technology/linux-nfs-25.jpg)
 
 执行完上面的命令，已经把TFTP上的test文件下载到开发板的当前目录下了，使用cat查看当前目录下test文件中的内容，如下图：
-![这里写图片描述](http://img.blog.csdn.net/20160813231109752)
+
+![这里写图片描述](/images\blog\technology/linux-nfs-26.jpg)
 
 
 通过上面的截图，可以看到文件的内容和TFTP上的文件内容是一样的，至此TFTP搭建完成了，以后再调试程序的时候可以用TFTP，这样就避免了每次都要生成镜像，并烧写镜像了。
@@ -286,7 +287,7 @@ TFTP传输应用程序
 
 下面演示一下调试应用程序的方法，在虚拟机的Ubuntu上编写一个输出helloworld的小程序，然后我通过交叉编译器编译这个程序生成了可执行文件helloworld，通过cp命令把这个可执行程序helloworld拷贝到了/var/tftpboot目录下面，接下来我们要在开发板端把hello文件下载到开发板上，并在开发板的串口上执行：tftp -g -l helloworld -r helloworld 192.168.1.109，如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231055295)
+![这里写图片描述](/images\blog\technology/linux-nfs-27.jpg)
 
 然后输入ls命令查看一下当前目录，可以看到已经有helloworld这个文件了。输入“chmod 777 helloworld”命令来修改下helloworld的权限，最后运行helloworld
 使用命令“./helloworld”运行helloworld程序，可以看到程序输出：“hello world！”了。通过TFTP这种方式可以提高调试程序的效率。
@@ -309,7 +310,7 @@ NFS是Network FileSystem的缩写，是由SUN公司研制的UNIX表示层协议�
 安装完成，接下来需要配置/etc/exports，使用vi命令打开/etc/exports，在/etc/export文件的最后一行添加：
 /home/topeet/linux/ *(rw,sync,no_root_squash)，如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20160813231010872)
+![这里写图片描述](/images\blog\technology/linux-nfs-28.jpg)
 
 下面讲解一下上面输入的内容都代表什么意思：
 
@@ -347,7 +348,7 @@ NFS是Network FileSystem的缩写，是由SUN公司研制的UNIX表示层协议�
 完成前面的搭建工作之后，就可以在虚拟机Ubuntu本机上验证一下，例如把/home/minilinux/system挂载到/mnt目录下，需要输入“mount -t nfs localhost:/home/minilinux/system /mnt”命令。
 执行完该命令之后，可以使用df命令查看是否挂载成功，如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230934168)
+![这里写图片描述](/images\blog\technology/linux-nfs-29.jpg)
 
 可以看到上图中高亮的那一行就是我们挂载的nfs文件系统，这说明我们的Ubuntu nfs服务器端搭建成功了。
 本节用前面章节制作的最小Linux系统为例，通过nfs来挂载它。把Linux最小文件系统放到虚拟机Ubuntu的/home/minilinux/system目录下。
@@ -376,7 +377,7 @@ ip=192.168.1.230:192.168.1.103:192.168.1.1:255.255.255.0:iTOP:eth0:off这里面�
 如果使用的是从github上下载的内核，那么除了需要严格按照前一小节中步骤配置以外，还需要简单的修改一下内核源码，屏蔽其中的调试信息。这部分需要先学习怎么使用github下载和编译，具体参考使用手册的附录。
 使用命令“find ./ -name dm9620.c”查找网卡的驱动源码。dm9620网卡驱动路径为“drivers/net/usb/dm9620.c”。使用vim编辑器打开，在文件中查找关键词“LEN_PLOAD”。如下图所示，将框中的代码注释掉。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230754439)
+![这里写图片描述](/images\blog\technology/linux-nfs-30.jpg)
 
 保存退出，然后重新编译，内核在有线网通信的就不会一直打印调试信息了。
 
@@ -385,6 +386,6 @@ ip=192.168.1.230:192.168.1.103:192.168.1.1:255.255.255.0:iTOP:eth0:off这里面�
 作者的NFS挂载的目录是“/home/minilinux”，以helloword程序为例来实现NFS调试。在虚拟机的终端将helloworld可执行文件拷贝到/home/minilinux/system/bin目录下。接下来启动开发板，需要使用NFS文件系统启动开发板挂载。
 在超级终端中输入“ls /bin/”命令，可以查看根文件系统下的文件，下翻显示窗口，可以看到helloworld。使用命令“chmod 777 /bin/helloworld”修改文件权限,输入”./bin/helloword”命令运行”helloword“，运行结果如下图所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20160813230743970)
+![这里写图片描述](/images\blog\technology/linux-nfs-31.jpg)
 
 通过上面的步骤就可以使用NFS很方便的调试程序了。
