@@ -16,6 +16,6 @@ description: 践行，不后悔
 
 回想这几天较为浮躁的内心，方有此感，文字随我成长，伴我同行。加油，文涛，守住自己的内心，每天都做好自己！
 
-![这里写图片描述](http://img.blog.csdn.net/20161217220801230?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/my_home_mountain.jpg)
 
 2016-09-08于民大617工艺室
