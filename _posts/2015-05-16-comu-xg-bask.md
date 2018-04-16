@@ -18,8 +18,8 @@ description: 2015 篮球赛
 
 最后，彪哥的话，我们一直牢记心中：“就算废了，我们也要赢下比赛”。虽然最终事与愿违，但这是我们六个人最坚强的后盾，我们的魂，我们的信念。。。。。。
 
-![这里写图片描述](http://img.blog.csdn.net/20161216110546493?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/muc_for_basketball.png)
 
 ——————————同年5月16晨日于民大理工楼
 
-![这里写图片描述](http://img.blog.csdn.net/20161216110127019?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/muc_15_basketball.jpg)

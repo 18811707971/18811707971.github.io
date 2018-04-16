@@ -25,8 +25,8 @@ description: 拉祜族
 
 ----------------与向老师（14年寒假）
 
-![这里写图片描述](http://img.blog.csdn.net/20161216105349218?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/home_summer.png)
 
 我的好兄弟
 
-![这里写图片描述](http://img.blog.csdn.net/20161216105603839?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/my_borther.png)
