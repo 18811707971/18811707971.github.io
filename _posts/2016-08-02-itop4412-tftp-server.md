@@ -50,7 +50,7 @@ vi /etc/xinetd.d/tftp
 
 代码格式如下图所示（用tab键隔开，不建议使用空格）
 
- ![这里写图片描述](http://img.blog.csdn.net/20160813224541022)
+ ![这里写图片描述](/images/blog/linux-tftp-1.jpg)
 
 其中的server_args是tftp 服务器的目录。TFTP 客户端就是从这个目录里面获取服务器上的文件的。上图使用的是/var/tftpboot，用户可以自己定义。
 
@@ -64,7 +64,7 @@ vi /etc/xinetd.d/tftp
 
 输入命令：netstat -a | grep tftp
 
-![这里写图片描述](http://img.blog.csdn.net/20160813224639684)
+![这里写图片描述](/images/blog/linux-tftp-2.jpg)
  
 出现上图的情况说明配置成功
 
@@ -124,4 +124,4 @@ vi /etc/xinetd.d/tftp
 	 开发板 IP:192.168.105
 	子网掩码：255.255.255.0
 
-![这里写图片描述](http://img.blog.csdn.net/20160813224951352)
+![这里写图片描述](/images/blog/linux-tftp-3.jpg)
