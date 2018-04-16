@@ -95,6 +95,6 @@ ____
 
 2018.4.7 于北京
 
-[xx](https://github.com/18811707971/18811707971.github.io/blob/master/images/blog/two-steps.png)
+![xx](/images/blog/two-steps.png)
 
 
