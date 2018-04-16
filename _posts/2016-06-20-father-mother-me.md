@@ -16,8 +16,8 @@ description: 家
 
 来到世间，总不能一生碌碌无为，虚度光阴，谁都无法预料明天会发生什么，我们所能做的，就是将每一天都过好，每天能够有小小的一定长进，日积月累，也终将会有一定的果实。做最好的自己，虚心求教，不骄不躁，秉承自己的风格，好好的走。虽再苦再累，也值得，毕竟为了自己信仰，自己的追求，为了自己的不甘心平庸。
 
-![这里写图片描述](http://img.blog.csdn.net/20161217215504675?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/my_home_spring.jpg)
 
 我的亲人，我的好友，你们是我一直坚持的动力，文涛永远牵挂着你们。
 
-![这里写图片描述](http://img.blog.csdn.net/20161217215548098?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/gohome_university_train.jpg)
