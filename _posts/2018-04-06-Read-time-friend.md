@@ -95,6 +95,4 @@ ____
 
 2018.4.7 于北京
 
-![xx](/images/blog/two-steps.png)
-
 
