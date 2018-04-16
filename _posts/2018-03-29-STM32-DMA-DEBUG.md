@@ -40,14 +40,15 @@ ____
 DMA 控制器，这就意味着同时只能有一个请求有效。外设的 DMA 请求，可以通过设置相应的
 外设寄存器中的控制位，被独立地开启或关闭。
 
-![这里写图片描述](https://img-blog.csdn.net/2018032622055419?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_channel.png)
 
 ## **3.相关寄存器**
 
 **DMA 中断状态寄存器（DMA_ISR）**
 
-![这里写图片描述](https://img-blog.csdn.net/20180326222310403?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-![这里写图片描述](https://img-blog.csdn.net/20180326222342536?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_set_1.png)
+
+![这里写图片描述](/images/blog/technology/stm32_dma_set_2.png)
 
 如果开启了 DMA_ISR 中这些中断，在达到条件后就会跳到中断服务函数里面去，即使没开启，我们也可以通过查询这些位来获得当前 DMA 传输的状态。这里我们常用的是 TCIFx，即通道 DMA 传输完成与否的标志。注意**此寄存器为只读寄存器**，所以在这些位被置位之后，只能通过其他的操作来清除。
 
@@ -55,7 +56,7 @@ DMA 控制器，这就意味着同时只能有一个请求有效。外设的 DMA
 
 该寄存器的各位描述如下图：
 
-![这里写图片描述](https://img-blog.csdn.net/20180326223349985?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_set_DMA_IFCR.png)
 
 DMA_IFCR 的各位就是用来清除 DMA_ISR 的对应位的，通过写 1 清除。在 DMA_ISR 被置位后，我们必须通过向该位寄存器对应的位写入 1 来清除。
 
@@ -63,19 +64,21 @@ DMA_IFCR 的各位就是用来清除 DMA_ISR 的对应位的，通过写 1 清�
 
 该寄存器控制着 DMA 的很多相关信息，包括**数据宽度、外设及存储器的宽度、通道优先级、增量模式、传输方向、中断允许、使能**等都是通过该寄存器来设置的。所以 DMA_CCRx 是 DMA 传输的核心控制寄存器。
 
-![这里写图片描述](https://img-blog.csdn.net/20180326224218700?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_set_3.png)
 
-![这里写图片描述](https://img-blog.csdn.net/20180326224302391?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_set_4.png)
 
-![这里写图片描述](https://img-blog.csdn.net/20180326224341420?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_set_5.png)
 
-![这里写图片描述](https://img-blog.csdn.net/20180326224408471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![这里写图片描述](/images/blog/technology/stm32_dma_set_6.png)
 
 **DMA 通道 x 传输数据量寄存器（DMA_CNDTRx）**
 
 这个寄存器控制 DMA 通道 x 的每次传输所要传输的数据量。其设置范围为 0~65535。并且该寄存器的值会随着传输的进行而减少，当该寄存器的值为 0 的时候就代表此次数据传输已经全部发送完成了。所以可以通过这个寄存器的值来知道当前 DMA 传输的进度。
 
-![这里写图片描述](https://img-blog.csdn.net/20180326231155279?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/stm32_dma_set_7.png)
+
 
 **DMA 通道 x 的外设地址寄存器（DMA_CPARx）**
 
