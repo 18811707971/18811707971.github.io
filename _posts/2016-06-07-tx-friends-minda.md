@@ -19,11 +19,11 @@ description: 13通信
 
 那天晚上，我们都喝醉了，大家一起谈着三年的篮球，一起谈着自己的往事，我们所有人，都在为13通信深深付出。当我感觉那个六月就要到来，我的兄弟们，再无一起战斗的机会，祝愿大家都有一个美好的明天，爱篮球，爱通信。
 
-![这里写图片描述](http://img.blog.csdn.net/20161216113638800?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/muc_16_basketball.jpg)
 
-![这里写图片描述](http://img.blog.csdn.net/20161216113653581?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/muc_16_basketball_sec.jpg)
 
-![这里写图片描述](http://img.blog.csdn.net/20161216113703191?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/muc_16_basketball_Lastest_glory.jpg)
 
 
 2016年6月7日凌晨于民大理工楼。
