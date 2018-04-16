@@ -94,7 +94,7 @@ description: about driver study
 (4)编译
 流程分析：
 
- ![这里写图片描述](http://img.blog.csdn.net/20160813212708613)
+ ![这里写图片描述](/images/blog/linux_simple_driver.png)
 
  我们将最简驱动和Makefile文件拷贝到ubuntu下，注意放到一个文件夹，然后make，成功编译后，文件夹下就有驱动模块：.ko文件。这样最简驱动就完成了。
 
