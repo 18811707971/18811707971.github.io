@@ -83,7 +83,7 @@ options类型参数可以有两种方式：
   
   这种类型的参数，通常跟随在options类型参数之后。例如，ls –s /功能为显示root目录的大小。’/’这个参数告诉ls要显示目录的路径。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128105029760)
+![这里写图片描述](/images/blog/technology/linux-video-getopt.jpg)
 
 二.getopt_long()函数使用规则：
 
@@ -184,7 +184,7 @@ eg:
 
 现象：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128130006156)
+![这里写图片描述](/images/blog/technology/linux-video-getopt-exp.jpg)
 
 参考：
 
