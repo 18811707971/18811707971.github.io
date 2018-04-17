@@ -88,7 +88,7 @@ _____
 2018，继续前进，这是变革的一年，多读书，多思考。
 
 
-![这里写图片描述](/images/blog/beijing_hdzb_night_winter.png)
+![](/images/blog/beijing_hdzb_night_winter.jpg)
 
 
 ____
