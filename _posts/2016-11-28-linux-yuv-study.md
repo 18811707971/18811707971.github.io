@@ -23,7 +23,7 @@ YUV码流的存储格式其实与其采样的方式密切相关，主流的采�
 
  用三个图来直观地表示采集的方式吧，以黑点表示采样该像素点的Y分量，以空心圆圈表示采用该像素点的UV分量。
 
- ![这里写图片描述](http://img.blog.csdn.net/20161128204027319)
+ ![这里写图片描述](/images/blog/technology/linux-v4l2-video-yuv-1.jpg)
 
 先记住下面这段话，以后提取每个像素的YUV分量会用到。
 
@@ -37,13 +37,13 @@ YUV码流的存储格式其实与其采样的方式密切相关，主流的采�
 
 （1） YUVY 格式 （属于YUV422）
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204144617)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_2.png)
  
 YUYV为YUV422采样的存储格式中的一种，相邻的两个Y共用其相邻的两个Cb、Cr，分析，对于像素点Y'00、Y'01 而言，其Cb、Cr的值均为 Cb00、Cr00，其他的像素点的YUV取值依次类推。 
 
 （2） UYVY 格式 （属于YUV422）
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204213520)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_3.png)
 
 UYVY格式也是YUV422采样的存储格式中的一种，只不过与YUYV不同的是UV的排列顺序不一样而已，还原其每个像素点的YUV值的方法与上面一样。
  
@@ -92,11 +92,11 @@ YUV4:2:2 ---> YUV4:2:0  Y不变，将U和V信号值在行(垂直方向)在进行
 
  YUV420sp格式如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204448912)                                                    
+![这里写图片描述](/images/blog/technology/linux_video_yuv_4.png)                                                    
  
  YUV420p数据格式如下图：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204512069)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_5.png)
            
  
 旋转90度的算法:
@@ -192,15 +192,15 @@ YUV 的优点之一是，色度频道的采样率可比 Y 频道低，同时不�
 
 图 1显示了 4:4:4 图片中使用的采样网格。灯光样例用叉来表示，色度样例则用圈表示。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204854492)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_6.png)
 
 4:2:2 采样的这种主要形式在 ITU-R Recommendation BT.601 中进行了定义。图 2 显示了此标准定义的采样网格。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204907643)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_7.png)
 
 4:2:0 采样有两种常见的变化形式。其中一种形式用于 MPEG-2 视频，另一种形式用于 MPEG-1 以及 ITU-T recommendations H.261 和 H.263。图 3 显示了 MPEG-1 方案中使用的采样网格，图 4 显示了 MPEG-2 方案中使用的采样网格。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128204927659)
+![这里写图片描述](/images/blog/technology/linux_v4l2_video-yuv_7.jpg)
 
 与 MPEG-1 方案相比，在 MPEG-2 方案与为 4:2:2 和 4:4:4 格式定义的采样网格之间进行转换更简单一些。因此，在 Windows 中首选 MPEG-2 方案，应该考虑将其作为 4:2:0 格式的默认转换方案。
 
@@ -230,7 +230,7 @@ YUV 的优点之一是，色度频道的采样率可比 Y 频道低，同时不�
 
 推荐一个 4:4:4 格式，FOURCC 码为 AYUV。这是一个打包格式，其中每个像素都被编码为四个连续字节，其组织顺序如下所示。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205024426)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_8.png)
 
 标记了 A 的字节包含 alpha 的值。
 
@@ -238,7 +238,7 @@ YUV 的优点之一是，色度频道的采样率可比 Y 频道低，同时不�
 
 支持两个 4:2:2 格式，FOURCC 码如下：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205049430)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_9.png)
 
 YUY2；UYVY：
 
@@ -248,7 +248,7 @@ YUY2：
 
 在 YUY2 格式中，数据可被视为一个不带正负号的 char 值组成的数组，其中第一个字节包含第一个 Y 样例，第二个字节包含第一个 U (Cb) 样例，第三个字节包含第二个 Y 样例，第四个字节包含第一个 V (Cr) 样例。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205148834)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_10.png)
 
 如果该图像被看作由两个 little-endian WORD 值组成的数组，则第一个 WORD 在最低有效位 (LSB) 中包含 Y0，在最高有效位 (MSB) 中包含 U。第二个 WORD 在 LSB 中包含 Y1，在 MSB 中包含 V。
 
@@ -258,7 +258,7 @@ UYVY：
 
 此格式与 YUY2 相同，只是字节顺序是与之相反的 — 就是说，色度字节和灯光字节是翻转的（图 7）。如果该图像被看作由两个 little-endian WORD 值组成的数组，则第一个 WORD 在 LSB 中包含 U，在 MSB 中包含 Y0，第二个 WORD 在 LSB 中包含 V，在 MSB 中包含 Y1。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205349275)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_11.png)
 
 4:2:0 格式，每像素 16 位
 推荐两个 4:2:0 每像素 16 位格式，FOURCC 码如下：
@@ -273,11 +273,11 @@ IMC1：
 
 IMC3：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205414525)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_12.png)
 
 此格式与 IMC1 相同，只是 U 和 V 平面进行了交换：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205437088)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_13.png)
 
 4:2:0 格式，每像素 12 位
 推荐四个 4:2:0 每像素 12 位格式，FOURCC 码如下：
@@ -290,25 +290,26 @@ IMC2：
 
 此格式与 IMC1 相同，只是 V (Cr) 和 U (Cb) 行在半跨距边界处进行了交错。换句话说，就是色度区域中的每个完整跨距行都以一行 V 样例开始，然后是一行在下一个半跨距边界处开始的 U 样例（图 10）。此布局与 IMC1 相比，能够更加高效地利用地址空间。它的色度地址空间缩小了一半，因此整体地址空间缩小了 25%。在各个 4:2:0 格式中，IMC2 是第二首选格式，排在 NV12 之后。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205912324)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_14.png)
 
 IMC4：
 
 此格式与 IMC2 相同，只是 U (Cb) 和 V (Cr) 行进行了交换：
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205924152)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_15.png)
 
 YV12：
 
 所有 Y 样例都会作为不带正负号的 char 值组成的数组首先显示在内存中。此数组后面紧接着所有 V (Cr) 样例。V 平面的跨距为 Y 平面跨距的一半，V 平面包含的行为 Y 平面包含行的一半。V 平面后面紧接着所有 U (Cb) 样例，它的跨距和行数与 V 平面相同（图 12）。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128205942751)
+
+![这里写图片描述](/images/blog/technology/linux_video_yuv_16.png)
 
 NV12：
 
 所有 Y 样例都会作为由不带正负号的 char 值组成的数组首先显示在内存中，并且行数为偶数。Y 平面后面紧接着一个由不带正负号的 char 值组成的数组，其中包含了打包的 U (Cb) 和 V (Cr) 样例，如图 13 所示。当组合的 U-V 数组被视为一个由 little-endian WORD 值组成的数组时，LSB 包含 U 值，MSB 包含 V 值。NV12 是用于 DirectX VA 的首选 4:2:0 像素格式。预期它会成为支持 4:2:0 视频的 DirectX VA 加速器的中期要求。
 
-![这里写图片描述](http://img.blog.csdn.net/20161128210011372)
+![这里写图片描述](/images/blog/technology/linux_video_yuv_17.png)
 
 YUV格式解析：
 
