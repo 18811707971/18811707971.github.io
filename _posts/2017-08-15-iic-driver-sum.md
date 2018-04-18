@@ -212,3 +212,5 @@ __________
 7.[i2c 相关知识总结（转）](http://blog.csdn.net/hygzxf/article/details/17416725)
 
 8.[IIC的一点理解](http://www.eefocus.com/stm3222/blog/16-10/393817_4e6f0.html)
+
+9.[STM32F10x_模拟I2C读写EEPROM](https://blog.csdn.net/ybhuangfugui/article/details/52151835)
