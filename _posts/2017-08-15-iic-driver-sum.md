@@ -38,7 +38,7 @@ IIC 的主要构成只有两个双向的信号线，一个是数据线 SDA,一�
 
 **3.IO输出结构**
 
-![这里写图片描述](http://img.blog.csdn.net/20170814221325257?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_1.jpg)
 
 每一个I2C总线器件内部的 SDA、SCL 引脚电路结构都是一样的，引脚的输出驱动与输入缓冲连在一起。其中输出为**漏极开路的场效应管**，输入缓冲为一只**高输入阻抗的同相器**，这种电路具有两个特点： 
 
@@ -54,16 +54,16 @@ IIC 的主要构成只有两个双向的信号线，一个是数据线 SDA,一�
 
 系统中的所有外围器件都具有一个**7位的"从器件专用地址码"**，其中**高4位为器件类型**，由生产厂家制定，**低3位为器件引脚定义地址**，由使用者定义。
 
-![这里写图片描述](http://img.blog.csdn.net/20170814221502097?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_2.jpg)
 
 对于 **10 位地址格式**，必须发送两个字节。前五位用来指定采用的是 10 位地址格式，发送的第一个字节中包括用于指定 10 位地址的 5 位以及地址的
 两个 MSb 和 1 个 R/W 位。第二个字节是其余的 8 位地址。 
 
-![这里写图片描述](http://img.blog.csdn.net/20170815211507007?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_3.png)
 
 主控器件通过地址码建立多机通信的机制，因此 I2C 总线省去了外围器件的片选线，这样无论总线上挂接多少个器件，其系统仍然为简约的二线结构。终端挂载在总线上，有主端和从端之分，主端必须是带有 CPU 的逻辑模块，在同一总线上同一时刻使能有一个主端，可以有多个从端，从端的数量受地址空间和总线的最大电容 400pF 的限制。
 
-![这里写图片描述](http://img.blog.csdn.net/20170814210639298?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_4.jpg)
 
 当多个主机试图去控制总线时，通过仲裁可以使得只有一个主机获得总线控制权，并且它传输的信息不被破坏。
 
@@ -104,7 +104,7 @@ I2C总线总线的SDA和SCL**两条信号线同时处于高电平**时，规定�
 
 **停止信号：**当**SCL为高期间，SDA由低到高的跳变**；停止信号也是一种电平跳变时序信号，而不是一个电平信号。
 
-![这里写图片描述](http://img.blog.csdn.net/20170814212330985?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_5.png)
 
 （3）应答信号ACK
 
@@ -112,7 +112,7 @@ I2C总线总线的SDA和SCL**两条信号线同时处于高电平**时，规定�
 
 对于反馈有效应答位ACK的要求是，**接收器在第9个时钟脉冲之前的低电平期间将SDA线拉低，并且确保在该时钟的高电平期间为稳定的低电平。** 如果接收器是主控器，则在它收到最后一个字节后，发送一个NACK信号，以通知被控发送器结束数据发送，并释放SDA线，以便主控接收器发送一个停止信号P。
 
-![这里写图片描述](http://img.blog.csdn.net/20170814213441713?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_6.png)
 
 （4）数据有效性
 
@@ -120,11 +120,11 @@ I2C总线**进行数据传送**时，**时钟信号为高电平期间，数据�
 
 即：数据在SCL的上升沿到来之前就需准备好。并在在下降沿到来之前必须稳定。
 
-![这里写图片描述](http://img.blog.csdn.net/20170814213617296?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_7.png)
 
 数据传输：先发送**起始位**，再发一个**8bit数据**：前7bit表示从地址，第8bit表示读或者写**。0 write是处理器往IIC从设备发**，**1 read是IIC从设备往处理器发**。第9个时钟周期回复响应信号。
 
-![这里写图片描述](http://img.blog.csdn.net/20170814220319431?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_8.png)
 
 （5）数据的传送
 
@@ -132,15 +132,15 @@ IIC 数据从最高位（MSB）开始传输，发送到SDA线上的数据必须�
 
 **典型时序：**
 
-![这里写图片描述](http://img.blog.csdn.net/20170815210413603?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_9.png)
 
 **完整的数据传送：**
 
-![这里写图片描述](http://img.blog.csdn.net/20170814214529138?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_10.png)
 
 **eg:传输 1011 0110**
 
-![这里写图片描述](http://img.blog.csdn.net/20170814221031748?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/i2c_bus_11.png)
 
 **应答位的时钟脉冲仍由主机产生，而应答位的数据状态则遵循“谁接收谁产生”的原则，即总是由接收器产生应答位。**主机向从机发送数据时，应答位由从机产生；主机从从机接收数据时，应答位由主机产生。
 
