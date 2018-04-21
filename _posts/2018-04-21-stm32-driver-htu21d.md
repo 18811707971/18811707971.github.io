@@ -7,6 +7,7 @@ tags: [IIC,HTU21D,STM32]
 description: STM32 driver htu21d
 ---
 
+
 ## **1.简介**
 
 法国Humirel公司新一代HTU21D温度和湿度传感器在尺寸与智能方面建立了新的标准：它嵌入了适于回流焊的双列扁平无引脚DFN 封装， 底面3x3mm ，高度1.1mm。**传感器输出经过标定的数字信号，标准 I2C 格式**。
