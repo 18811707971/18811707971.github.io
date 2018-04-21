@@ -21,7 +21,7 @@ _____
  
 (1)锂电池充电过程
 
-![这里写图片描述](http://img.blog.csdn.net/20170803091904552?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/li_battery_1.jpg)
 
                                         图1-充电过程
                                         
@@ -29,7 +29,7 @@ _____
  
  锂电池的**充电电流如上图紫色线所示**。锂电池的充电分为三个阶段，分别是**恒流预充电、大电流恒流充电与恒压充电**。
 
-![这里写图片描述](http://img.blog.csdn.net/20170803094153139?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/li_battery_2.jpg)
 
  a.当电压低于 3.0V 时，充电器会采用 100mA 电流对锂电池进行预充电，就是预充阶段，目的是慢慢恢复过放电的锂电池，是一种保护措施来的。合格的充电器都会有这个充电阶段。
 
@@ -49,17 +49,17 @@ d.充电终止，有两种典型的充电终止方法：采用最小充电电流
 
  普通锂电池保护板通常包括**控制IC、MOS开关、电阻、电容及辅助器件FUSE、PTC、NTC、ID、存储器**等。其中控制IC，在一切正常的情况下控制 MOS开关导通，使电芯与外电路导通，而当电芯电压或回路电流超过规定值时，它立刻控制MOS开关关断，保护电芯的安全。
 
-![这里写图片描述](http://img.blog.csdn.net/20170803101711743?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/li_battery_3.jpg)
 
 该电路由锂电池保护专用**集成电路DW01**，充、放电控制MOSFET1(**内含两只N沟道MOSFET**)等部分组成。单体锂电池接在B+和B-之间，电池组从P+和P-输出电压。充电时，充电器输出电压接在P+和P-之间，**电流从P+到单体电池的B+和B-，再经过充电控制MOSFET到P-**。在充电过程中，当单体电池的电压超过4.35V时，专用集成电路DW01的 **OC** 脚输出信号使充电控制MOSFET关断，锂电池立即停止充电，从而防止锂电池因过充电而损坏。放电过程中，当单体电池的电压降到2.30V时，DW01的 **OD** 脚输出信号使放电控制MOSFET关断，锂电池立即停止放电，从而防止锂电池因过放电而损坏，DW01的CS脚为电流检测脚，输出短路时，充放电控制MOSFET的导通压降剧增，CS脚电压迅速升高，DW01输出信号使充放电控制MOSFET迅速关断，从而实现过电流或短路保护。
 
 实例运用：电池保护芯片 + 双 NMOS	
 
-![这里写图片描述](http://img.blog.csdn.net/20170803115237741?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/li_battery_4.jpg)
 
 精工电子S-8261系列的锂电池管理芯片运用
 
-![这里写图片描述](https://img-blog.csdn.net/2018032715462227?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/li_battery_5.png)
 
 
 **参考：**
