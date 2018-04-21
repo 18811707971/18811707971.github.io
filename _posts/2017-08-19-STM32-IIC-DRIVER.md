@@ -13,35 +13,35 @@ MiniSTM32 开发板板载的 EEPROM 芯片型号为 24C02。该芯片的总容�
 
 ### **2.硬件连接**
 
-![这里写图片描述](http://img.blog.csdn.net/20170819131622775?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_1.png)
 
 A2、A1、A0 三个引脚直接接地。供电： (VCC = 2.7V to 5.5V)
 
 器件地址设置：
 
-![这里写图片描述](http://img.blog.csdn.net/20170819132547458?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_2.png)
 
 对于AT24C02:Addr--->0xA0（写）/ 0xA1（读）。
 
 单字节写入：
 
-![这里写图片描述](http://img.blog.csdn.net/20170819133254612?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_3.png)
 
 按页写入：
 
-![这里写图片描述](http://img.blog.csdn.net/20170819133400314?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_4.png)
 
 从当前地址读出数据;
 
-![这里写图片描述](http://img.blog.csdn.net/20170819133537805?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_5.png)
 
 随机读取：
 
-![这里写图片描述](http://img.blog.csdn.net/20170819133636709?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_6.png)
 
 顺序读出：
 
-![这里写图片描述](http://img.blog.csdn.net/20170819133759926?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/technology/stm32_soft_i2c_24c02_7.png)
 
 
 ### **3.例程分析**
