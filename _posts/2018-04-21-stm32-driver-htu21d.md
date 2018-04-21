@@ -154,8 +154,11 @@ ___
 ![这里写图片描述](/images/blog/technology/htu21d_IIC_18.png)
 
 对于测量出来float的数值如何直接显示到LCD上，代码中简要的介绍了两种方式：
+
 LCD显示方式1：sprintf函数将结果打印到test数组里，转换成字符串显示(LCD_ShowString)。
+
 LCD显示方式2:将得到的数值拆分成整数和小数直接显示在液晶(LCD_ShowxNum)。
+
 液晶显示直接参考正点原子的驱动。
 
 ____
