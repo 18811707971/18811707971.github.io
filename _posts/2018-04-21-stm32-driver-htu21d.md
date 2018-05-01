@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: STM32驱动温湿度传感器HTU21D
 date: 2018-04-21
@@ -12,7 +12,7 @@ description: STM32 driver htu21d
 
 法国Humirel公司新一代HTU21D温度和湿度传感器在尺寸与智能方面建立了新的标准：它嵌入了适于回流焊的双列扁平无引脚DFN 封装， 底面3x3mm ，高度1.1mm。**传感器输出经过标定的数字信号，标准 I2C 格式**。
 
-![这里写图片描述](https://img-blog.csdn.net/20180421235247304?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_1.png)
 
 HTU21D温度和湿度传感器为OEM应用提供一个准确可靠的温湿度测量数据。通过一个微控
 制器的接口和模块连接达到温度和湿度数字输出。HTU21D 的分辨率可以通过输入命令进行改变（8/12bit 乃至12/14bit 的RH/T），传感器可以检测到电池低电量状态，并且输出校验和，有助于提高通信的可靠性。
@@ -22,11 +22,11 @@ ____
 
 ## **2.规格参数**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421215527857?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_2.png)
 
 **25摄氏度，3.3V供电时的电气特性如下：**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421215722410?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_3.png)
 
 数据手册下载地址如下：
 
@@ -36,11 +36,11 @@ ____
 
 如果SCL 和SDA 信号线相互平行并且非常接近，有可能导致信号串扰和通讯失败。解决方法是在两个信号线之间放置VDD 或GND，将信号线隔开，或使用屏蔽电缆。此外，降低SCL 频率也可能提高信号传输的完整性。须在电源引脚（VDD， GND）之间加一个100nF 的去藕电容，用于滤波。此电容应尽量靠近传感器。
 
-![这里写图片描述](https://img-blog.csdn.net/2018042122053083?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_4.png)
 
 **引脚定义：**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421220659734?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_5.png)
 
 本实验采用的为成品HTU21D模块，直接与 STM32 开发板连接即可。
 
@@ -59,31 +59,32 @@ Htu21d遵循标准的 IIC 进行通信，关于 IIC 的介绍请看--->[IIC专�
 #### **3.1 IIC启动信号**
 
 启动传输，发送一位数据时，包括 DATA 线在 SCK 线高电平期间一个向低电平的跳变。
-![这里写图片描述](https://img-blog.csdn.net/20180421222352349?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
-![这里写图片描述](https://img-blog.csdn.net/20180421222527286?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_1.png)
+
+![这里写图片描述](/images/blog/technology/htu21d_IIC_2.png)
 
 #### **3.2 IIC停止信号**
 
 终止传输，停止发送数据时，包括 DATA 线在 SCK 线高电平期间一个向高电平的跳变。
 
-![这里写图片描述](https://img-blog.csdn.net/20180421222627320?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_3.png)
 
-![这里写图片描述](https://img-blog.csdn.net/20180421222712808?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_4.png)
 
 #### **3.2 IIC数据传输**
 
 SCL时钟电平为低， 可以改换SDA数据线的电平，在SCL上升沿的过程将SDA数据发送出去。SCL为高电平时，SDA上的数据保持稳定。
 
-![这里写图片描述](https://img-blog.csdn.net/20180421223128270?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_5.png)
 
 I2C 是以字节（8位）的方式进行传输，总线上每传输完1字节之后会有一个应答信号，应答信号总是由接收方来产生。通信过程的时钟由主器件(主机)提供。
 
 **IIC 写一字节:**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421223534906?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_6.png)
 
-![这里写图片描述](https://img-blog.csdn.net/20180421223759350?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_7.png)
 
 数据发送结束，进行应答操作。
 0：表示从机应答，可以继续下一步操作；
@@ -93,23 +94,23 @@ I2C 是以字节（8位）的方式进行传输，总线上每传输完1字节�
 
 IIC读取操作类似于发送，只是传输数据方向相反。
 
-![这里写图片描述](https://img-blog.csdn.net/20180421224254915?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_8.png)
 
-![这里写图片描述](https://img-blog.csdn.net/20180421224753698?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_9.png)
 
 #### **3.3 IIC应答信号处理**
 
 **等待应答：**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421225028720?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_10.png)
 
 **产生应答：**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421225126143?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_11.png)
 
 **产生非应答：**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421225205776?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_12.png)
 
 ___
 
@@ -117,7 +118,7 @@ ___
 
 测量命令如下表：
 
-![这里写图片描述](https://img-blog.csdn.net/20180421225428235?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_13.png)
 
 本文采用非保持主机：
 //非主机模式
@@ -128,11 +129,11 @@ ___
 
 在非主机模式下， MCU 需要对传感器状态进行查询。此过程通过发送一个启动传输时序，之后紧接着是如图所示的I2C 首字节（1000’0001）来完成。如果内部处理工作完成，单片机查询到传感器发出的确认信号后，相关数据就可以通过MCU 进行读取。如果测量处理工作没有完成，传感器无确认位（ACK）输出，此时必须重新发送启动传输时序。
 
-![这里写图片描述](https://img-blog.csdn.net/20180421225813951?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_14.png)
 
 **传感器初始化：**
 
-![这里写图片描述](https://img-blog.csdn.net/20180421230047879?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_15.png)
 
 **传感器数据读取与转换：**
 
@@ -140,21 +141,24 @@ ___
 
 转换计算如下图：
 
-![这里写图片描述](https://img-blog.csdn.net/20180421230241346?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_16.png)
 
 源代码实现：
 
-![这里写图片描述](https://img-blog.csdn.net/20180421230342349?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_17.png)
 
 显示方式：
 
 本实验通过串口打印和 TFTLCD 显示，串口打印有助于程序的调试。
 
-![这里写图片描述](https://img-blog.csdn.net/20180421230934496?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/technology/htu21d_IIC_18.png)
 
 对于测量出来float的数值如何直接显示到LCD上，代码中简要的介绍了两种方式：
+
 LCD显示方式1：sprintf函数将结果打印到test数组里，转换成字符串显示(LCD_ShowString)。
+
 LCD显示方式2:将得到的数值拆分成整数和小数直接显示在液晶(LCD_ShowxNum)。
+
 液晶显示直接参考正点原子的驱动。
 
 ____
