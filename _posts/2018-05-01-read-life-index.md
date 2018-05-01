@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: 家乡，拉祜族
+title: 好句摘录专栏
 date: 2018-05-01
 categories: 随笔
 tags: [读书,笔记,成长]
