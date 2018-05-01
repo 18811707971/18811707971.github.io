@@ -20,4 +20,4 @@ description: 通过人生的下一个路口---工作
 今天发了正式工作第一个月的工资，虽然不多，但也算是自己可以通过自己的努力养活自己了，也是值得纪念与高兴的。继续加油吧，不要停下，趁年轻，策马扬鞭。每当下班一个人走在北京的街头，努力着，前行着，虽然很累，但也值得，总会有几分惬意。在远方，还有那么多我所爱的，一直在追求的，以及我的使命，加油，继续前行。革命尚未成功，仍需不断奋斗！适当打打鸡血，充满年轻人应有的朝气，撸起袖子加油干。
 
 
-![这里写图片描述](http://img.blog.csdn.net/20170731215613757?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/my_first_job_sum.jpg)

@@ -30,6 +30,6 @@ description: 下一站很难,但我要坚强
 
 时年2016-11-29晚于MUC
 
-![那是大学自己的电脑第一次开机](http://img.blog.csdn.net/20161129231344394)
+![那是大学自己的电脑第一次开机](/images/blog/university_first_computer.jpg)
 
 远方的风啊，还在为我而吹吗?
