@@ -15,7 +15,7 @@ description: 生活喜事
 
 他说，他的人生注定一直在追赶，不能够停留！
 
-![这里写图片描述](http://img.blog.csdn.net/20170328140750516?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/he_and_she_promise.jpg)
 
 
 
