@@ -9,7 +9,7 @@ description: 读万卷书，行万里路
 
 index******************************************************************************************************
 
-![这里写图片描述](https://img-blog.csdn.net/20180501130557590?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d3dDE4ODExNzA3OTcx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](/images/blog/wangjing_morning_moon.jpg)
 
 ## 出处   [mindhacks](http://mindhacks.cn/)
 
