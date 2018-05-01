@@ -7,7 +7,7 @@ tags: [项目,大学]
 description: 责任，实验室的故事
 ---
 
-![这里写图片描述](http://img.blog.csdn.net/20170407214129065?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd3d0MTg4MTE3MDc5NzE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](/images/blog/muc_gccx_2017.jpg)
 
 这一天，等了很久，终于到来了，一种如释重负，敞开心气的晴朗。一面是结束，一面是新途。
 
